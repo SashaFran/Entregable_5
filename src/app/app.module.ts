@@ -1,16 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NoLogginModule } from './components/noLoggin/no-loggin.module';
 
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavBarComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NoLogginModule
   ],
   providers: [],
   bootstrap: [AppComponent]

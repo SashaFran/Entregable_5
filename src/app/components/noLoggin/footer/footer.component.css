@@ -1,14 +1,38 @@
 .page-footer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    display: flex;
+    height: 100px;
     align-items: center;
+    text-align: center;
     background-color: black;
     bottom: 0;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    position: fixed;
+    display:block;
+    margin: 0 auto;
+
+}
+.footer_anchor, .footer_img{
+    padding-top: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0 auto;
+
+}
+.footer_anchor a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+}
+.footer_anchor i{
+    font-size: 20px;
+    margin-left: 15px;
+    color: white;
+}
+.footer_img i{
+    font-size: 30px;
+    color: white;
+    margin-left: 30px;
 }

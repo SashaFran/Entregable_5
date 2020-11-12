@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "SpoilerFive"
+    }
+  },
+  "defaultProject": "SpoilerFive",
+  "cli": {
+    "analytics": false
+  }
 }

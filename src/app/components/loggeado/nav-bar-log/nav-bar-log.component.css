@@ -1,0 +1,72 @@
+.spacer {
+    flex: 0.98;
+  }
+  .nav-bar_logo{
+      margin-left: 20px;
+  }
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+  }
+  .side-panel{
+    width: 300px;
+    position: fixed;
+    top: 0;
+    background: #000;
+    z-index: 99;
+    height: 100%;
+  }
+  .side-panel h4{
+      font-size: 25px;
+  }
+  .side-panel_contacto{
+      margin-top: 380px;
+      text-align: center;
+      align-items: center;
+  }
+  .side-panel_contacto a{
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      margin-left: 2px;
+  }
+  .side-panel_contacto i{
+    color: white;
+    font-size: 20px;
+    margin-left: 8px;
+}
+  .side-panel_informacion{
+      color: white;
+      margin-top: 100px;
+      padding-left: 35px;
+  }
+  .side-panel_informacion i{
+      padding: 8px;
+      font-size: 20px;
+  }
+  .side-panel_informacion li{
+      list-style-type: none;
+      color: white;
+      margin-top: 5px;
+      text-decoration: none;
+  }
+  .side-panel_informacion a{
+      color: white;
+      text-decoration: none;
+      font-size: 19px;
+      font-style: oblique;
+  }
+  @media screen and (max-width: 767px) {
+    .spacer {
+        flex: 0.85;
+      }
+      .nav-bar_logo{
+          margin-left: 10px;
+      }
+  }

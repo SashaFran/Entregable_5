@@ -26,20 +26,32 @@
       font-size: 25px;
   }
   .side-panel_contacto{
-      margin-top: 380px;
+      margin-top: 280px;
       text-align: center;
       align-items: center;
   }
   .side-panel_contacto a{
       color: white;
       text-decoration: none;
-      font-size: 20px;
-      margin-left: 2px;
+      font-size: 15px;
+      padding-right: 30px;
+      padding-left: 20px;
+      
   }
   .side-panel_contacto i{
     color: white;
     font-size: 20px;
-    margin-left: 8px;
+    margin-left: 42px;
+    margin-right: 38px;
+}
+.side-panel_img{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.side-panel_img i{
+    margin: 25px;
+    margin-top: 20px;
 }
   .side-panel_informacion{
       color: white;
@@ -62,6 +74,7 @@
       font-size: 19px;
       font-style: oblique;
   }
+
   @media screen and (max-width: 767px) {
     .spacer {
         flex: 0.85;

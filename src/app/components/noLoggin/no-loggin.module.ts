@@ -4,18 +4,21 @@ import { CommonModule } from '@angular/common';
 
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
+import { NoLogginEnglobadoComponent } from './no-loggin-englobado/no-loggin-englobado.component';
 
 @NgModule({
   declarations: [
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    NoLogginEnglobadoComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    NoLogginEnglobadoComponent
   ]
 })
 export class NoLogginModule { }

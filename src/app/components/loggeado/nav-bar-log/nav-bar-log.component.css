@@ -14,6 +14,23 @@
     align-items: center;
     background-color: black;
   }
+  .buscador{
+      display: inline-flex;
+      margin: 0 auto;
+    width:48%;
+    }
+  .buscador input{
+      height: 30px;
+      margin-top: 9px;
+      border-radius: 9px;
+      width: 300px;
+      opacity: 0.5;
+  }
+  .buscador i{
+      margin: 8px;
+      color: white;
+      font-size: 30px;
+  }
   .side-panel{
     width: 250px;
     position: fixed;
@@ -24,9 +41,10 @@
   }
   .side-panel h4{
       font-size: 25px;
+      margin-top: 25px;
   }
   .side-panel_contacto{
-      margin-top: 310px;
+      margin-top: 275px;
       text-align: center;
       align-items: center;
   }
@@ -74,7 +92,21 @@
       font-size: 19px;
       font-style: oblique;
   }
-
+    .user i{
+        color: white;
+        font-size: 30px;
+        padding: 15px;
+        
+    }
+    .user_notificaciones{
+        border-radius: 100%;
+        width: 25px;
+        height: 25px;
+        background-color: red;
+        border: 2px solid red;
+        position: fixed;
+        margin-top: -55px;
+    }
   @media screen and (max-width: 767px) {
     .spacer {
         flex: 0.85;

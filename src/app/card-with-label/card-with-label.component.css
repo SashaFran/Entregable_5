@@ -1,7 +1,6 @@
 .card-song{
     width: 186px;
     height: 215px;
-  /*   background-color:  #C4C4C4; */
     text-align: center;
     box-sizing: unset;
     
@@ -24,7 +23,8 @@
     border-radius: 13px;
   }
 .card-song a{
-    font-family: Roboto;
+   /*  font-family: roboto, sans-serif; 
+   font-family: 'Roboto', sans-serif;*/
     font-style: normal;
     font-weight: 500;
     font-size: 25px;

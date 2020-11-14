@@ -6,8 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-scroll-horizontal.component.css']
 })
 export class CardScrollHorizontalComponent implements OnInit {
-
-  constructor() { }
+  arraySongs:any[];
+  constructor() { 
+    this.arraySongs=[
+      [{'image':"../../assets/img/image.png"},{'titlesong':'titulo Cancion'}],
+      [{'image':"../../assets/img/image.png"},{'titlesong':'titulo Cancion'}],
+      [{'image':"../../assets/img/image.png"},{'titlesong':'titulo Cancion'}],
+      [{'image':"../../assets/img/image.png"},{'titlesong':'titulo Cancion'}],
+      [{'image':"../../assets/img/image.png"},{'titlesong':'titulo Cancion'}],
+    ];
+  }
 
   ngOnInit(): void {
   }

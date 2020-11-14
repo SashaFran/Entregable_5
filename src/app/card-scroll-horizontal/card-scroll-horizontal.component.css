@@ -6,9 +6,7 @@
     overflow: hidden;
 
 }
-.drag-scroll-item{
-    
-}
+
 .drag-scroll::-webkit-scrollbar {
     width: 0px;
     display: none;
@@ -17,11 +15,11 @@
 h1{
     margin-left: 15px;
     font-family: Roboto;
-    font-style: bold;
+    font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 35px;
-
+    
     color: #0C7489;
 }
 .card{
@@ -37,6 +35,8 @@ h1{
         margin-left: 15px;
     }
     h1{
+        font-family: Roboto;
+        font-style: normal;
         font-weight: bold;
         font-size: 19px;
         line-height: 22px;

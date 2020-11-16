@@ -1,11 +1,9 @@
 .boton {
     margin:2px;
-    color: white;
     border:none;
     text-align: center;
     display: inline-block;
     font-size: 16px;
-    background: #119DA4;
     border-radius: 50px;
     height: 40px;
     width: 240px;

@@ -1,0 +1,21 @@
+
+.mobil{
+    display: none;
+}
+.img {
+    height: 25px;
+    width: 30px;
+}
+
+@media (max-width: 480px) {
+.webbrowser{
+    display: none;
+}
+.mobil{
+    display: inline-block;
+}
+.img {
+    width: 25px;
+    height: 24px;
+}
+}

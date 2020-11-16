@@ -11,6 +11,7 @@ import { CardScrollHorizontalComponent } from './card-scroll-horizontal/card-scr
 import { ButtonGreenComponent } from './button-green/button-green.component';
 import { InputTextComponent } from './input-text/input-text.component';
 
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { InputTextComponent } from './input-text/input-text.component';
     NoLogginModule,
     LoggeadoModule,
     MatCardModule,
-    DragScrollModule
+    DragScrollModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

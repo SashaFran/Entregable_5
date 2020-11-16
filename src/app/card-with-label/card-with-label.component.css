@@ -23,13 +23,10 @@
     border-radius: 13px;
   }
 .card-song a{
-   /*  font-family: roboto, sans-serif; 
-   font-family: 'Roboto', sans-serif;*/
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
     line-height: 29px;
-    color: #6D6969;
 }
 .card-song a:hover{
     text-decoration: none;

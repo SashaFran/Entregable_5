@@ -9,7 +9,7 @@
          
     </div>
 </div> -->
-<!-- <div class="container-scrolling">
+<div class="container-scrolling">
 <drag-scroll drag-scroll-y-disabled="true" scrollbar-hidden="true">
     <app-card-with-label drag-scroll-item  class="card"></app-card-with-label>
     <app-card-with-label drag-scroll-item class="card"></app-card-with-label>
@@ -18,11 +18,11 @@
     <app-card-with-label drag-scroll-item class="card"></app-card-with-label>
     <app-card-with-label drag-scroll-item class="card"></app-card-with-label>
 </drag-scroll>
-</div> -->
-<div class="container-scrolling">
+</div>
+<!-- <div class="container-scrolling">
     <drag-scroll drag-scroll-y-disabled="true" scrollbar-hidden="true">
         <div *ngFor="let item of arraySongs">
-            <app-card-with-label [image]="{{item.image}}" [titlesong]="{{item.titlesong}}" drag-scroll-item class="card"></app-card-with-label>
+            <app-card-with-label [image]=item.image [titlesong]=item.titlesong drag-scroll-item class="card"></app-card-with-label>
         </div>
     </drag-scroll>
-</div>
+</div> -->

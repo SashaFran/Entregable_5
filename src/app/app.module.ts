@@ -8,6 +8,8 @@ import { DragScrollModule } from 'ngx-drag-scroll';
 import { AppComponent } from './app.component';
 import { CardWithLabelComponent } from './card-with-label/card-with-label.component';
 import { CardScrollHorizontalComponent } from './card-scroll-horizontal/card-scroll-horizontal.component';
+import { ButtonGreenComponent } from './button-green/button-green.component';
+import { InputTextComponent } from './input-text/input-text.component';
 
 
 
@@ -15,7 +17,9 @@ import { CardScrollHorizontalComponent } from './card-scroll-horizontal/card-scr
   declarations: [
     AppComponent,
     CardWithLabelComponent,
-    CardScrollHorizontalComponent
+    CardScrollHorizontalComponent,
+    ButtonGreenComponent,
+    InputTextComponent
   ],
   imports: [
     BrowserModule,

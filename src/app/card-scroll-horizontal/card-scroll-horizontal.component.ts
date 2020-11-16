@@ -9,11 +9,11 @@ export class CardScrollHorizontalComponent implements OnInit {
   arraySongs:any[];
   constructor() { 
     this.arraySongs=[
-      [{'image':"../../assets/img/image.png"},{'titlesong':'titulo Cancion'}],
-      [{'image':"../../assets/img/image.png"},{'titlesong':'titulo Cancion'}],
-      [{'image':"../../assets/img/image.png"},{'titlesong':'titulo Cancion'}],
-      [{'image':"../../assets/img/image.png"},{'titlesong':'titulo Cancion'}],
-      [{'image':"../../assets/img/image.png"},{'titlesong':'titulo Cancion'}],
+      {"image": "../../assets/img/image.png","titlesong": "titulo Cancion"},
+      {"image": "../../assets/img/image.png","titlesong": "titulo Cancion"},
+      {"image": "../../assets/img/image.png","titlesong": "titulo Cancion"},
+      {"image": "../../assets/img/image.png","titlesong": "titulo Cancion"},
+      {"image": "../../assets/img/image.png","titlesong": "titulo Cancion"}
     ];
   }
 

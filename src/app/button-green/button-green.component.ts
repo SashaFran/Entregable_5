@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonGreenComponent implements OnInit {
   name:string;
-  action:string;
+  value:string;
   constructor() {
-    this.name="button";
-    this.action="";
+    this.name="id";
+    this.value="button";
    }
 
   ngOnInit(): void {

@@ -4,6 +4,7 @@ import { NoLogginModule } from './components/noLoggin/no-loggin.module';
 import { LoggeadoModule } from './components/loggeado/loggeado.module';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     NoLogginModule,
-    LoggeadoModule
+    LoggeadoModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

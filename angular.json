@@ -123,6 +123,10 @@
   },
   "defaultProject": "SpoilerFive",
   "cli": {
+<<<<<<< HEAD
     "analytics": false
+=======
+    "analytics": "c5e89133-4fe4-4148-9cf1-70703c210f8c"
+>>>>>>> belen_branch
   }
 }

@@ -12,6 +12,7 @@ import { ButtonGreenComponent } from './button-green/button-green.component';
 import { InputTextComponent } from './input-text/input-text.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { InfoSongComponent } from './info-song/info-song.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { AppRoutingModule } from './app-routing.module';
     CardWithLabelComponent,
     CardScrollHorizontalComponent,
     ButtonGreenComponent,
-    InputTextComponent
+    InputTextComponent,
+    InfoSongComponent
   ],
   imports: [
     BrowserModule,

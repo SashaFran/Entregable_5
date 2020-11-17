@@ -13,6 +13,8 @@ import { InputTextComponent } from './input-text/input-text.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { InfoSongComponent } from './info-song/info-song.component';
+import { TabSelectorComponent } from './tab-selector/tab-selector.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { InfoSongComponent } from './info-song/info-song.component';
     CardScrollHorizontalComponent,
     ButtonGreenComponent,
     InputTextComponent,
-    InfoSongComponent
+    InfoSongComponent,
+    TabSelectorComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { InfoSongComponent } from './info-song/info-song.component';
     LoggeadoModule,
     MatCardModule,
     DragScrollModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

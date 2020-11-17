@@ -1,0 +1,29 @@
+.mat-tab-group {
+    width:  80%;
+  }
+
+.mat-tab-group .mat-tab:active{
+    font-size: 1.1rem;
+}
+
+ .box-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+  }
+    
+  .box-content {
+    width: 80%;
+  }
+@media (max-width: 480px) {
+    .mat-tab-group{
+        width: 100%;
+    }
+    .box-content {
+        width: 100%;
+      }
+
+}

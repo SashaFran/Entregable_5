@@ -1,0 +1,40 @@
+
+.container-scrolling{
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 60%;
+    overflow: hidden;
+}
+
+.drag-scroll::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+} 
+
+h1{
+    margin-left: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+}
+.card{
+    margin-left:15px;
+    border: none !important;
+}
+
+@media (max-width: 480px) {
+    .container-scrolling{
+        width: 100%;
+    }
+    .drag-scroll .card {
+        margin-left: 15px;
+    }
+    h1{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 22px;
+    }
+
+} 

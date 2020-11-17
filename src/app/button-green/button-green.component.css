@@ -1,0 +1,20 @@
+.boton {
+    margin:2px;
+    border:none;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+    height: 40px;
+    width: 240px;
+    outline:none;
+    
+  }
+.boton:hover{
+    border:none;
+    /* box-shadow: 0 10px 10px 0 rgba(0,0,0,0.10), 0 5px 10px 0 rgba(0,0,0,0.10); */
+}
+.button:active {
+    border:none;
+    outline:none;
+}

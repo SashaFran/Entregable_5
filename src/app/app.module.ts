@@ -1,20 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NoLogginModule } from './components/noLoggin/no-loggin.module';
-import { LoggeadoModule } from './components/loggeado/loggeado.module';
-
+import {NavBarLogComponent} from './components/loggeado/nav-bar-log/nav-bar-log.component';
+import {NavBarComponent} from './components/noLoggin/nav-bar/nav-bar.component';
+import { FooterLogComponent } from './components/loggeado/footer-log/footer-log.component';
+import { FooterComponent } from './components/noLoggin/footer/footer.component';
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule,routingComponents } from './app-routing.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    routingComponents,
+    NavBarLogComponent,
+    FooterLogComponent,
+    NavBarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    NoLogginModule,
-    LoggeadoModule,
     AppRoutingModule
   ],
   providers: [],

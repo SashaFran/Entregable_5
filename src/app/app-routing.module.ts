@@ -1,8 +1,16 @@
 import { NgModule } from '@angular/core';
 import{RouterModule,Routes} from '@angular/router';
-const routes: Routes=[];
+import{LoggeadoEnglobadoComponent} from './components/loggeado/loggeado-englobado/loggeado-englobado.component';
+import{NoLogginEnglobadoComponent} from './components/noLoggin/no-loggin-englobado/no-loggin-englobado.component';
+
+const routes: Routes=[
+  {path:'loggeado',component:LoggeadoEnglobadoComponent},
+  {path:'nolog',component:NoLogginEnglobadoComponent}
+];
 
 @NgModule({
+  imports:[RouterModule.forRoot(routes)],
   exports:[RouterModule]
 })
 export class AppRoutingModule { }
+export const routingComponents=[LoggeadoEnglobadoComponent,NoLogginEnglobadoComponent];

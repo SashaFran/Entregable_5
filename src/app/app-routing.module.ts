@@ -4,8 +4,8 @@ import{LoggeadoEnglobadoComponent} from './components/loggeado/loggeado-englobad
 import{NoLogginEnglobadoComponent} from './components/noLoggin/no-loggin-englobado/no-loggin-englobado.component';
 
 const routes: Routes=[
-  {path:'loggeado',component:LoggeadoEnglobadoComponent},
-  {path:'nolog',component:NoLogginEnglobadoComponent}
+  {path:'home-log',component:LoggeadoEnglobadoComponent},
+  {path:'home',component:NoLogginEnglobadoComponent}
 ];
 
 @NgModule({

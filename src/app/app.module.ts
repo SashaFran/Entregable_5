@@ -23,18 +23,20 @@ import { AppRoutingModule,routingComponents } from './app-routing.module';
     CardScrollHorizontalComponent,
     ButtonGreenComponent,
     InputTextComponent,
-    InfoSongComponent
+    InfoSongComponent,
+    routingComponents,
+    NavBarLogComponent,
+    FooterLogComponent,
+    NavBarComponent,
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule,
     MatCardModule,
     DragScrollModule,
     AppRoutingModule,
-    routingComponents,
-    NavBarLogComponent,
-    FooterLogComponent,
-    NavBarComponent,
-    FooterComponent,
+   
   ],
 
   providers: [],

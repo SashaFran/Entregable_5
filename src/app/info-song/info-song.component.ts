@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoSongComponent implements OnInit {
   nro:string;
-  title:string;
+  titulo:string;
   album:string;
   duracion:string;
 
   constructor() { 
     this.nro="1";
-    this.title="titulo_1";
+    this.titulo="titulo_1";
     this.album="album_1";
     this.duracion= "2:30";
   }

@@ -14,6 +14,8 @@ import { FooterLogComponent } from './components/loggeado/footer-log/footer-log.
 import { FooterComponent } from './components/noLoggin/footer/footer.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule,routingComponents } from './app-routing.module';
+import { TabSelectorComponent } from './tab-selector/tab-selector.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @NgModule({
@@ -29,6 +31,7 @@ import { AppRoutingModule,routingComponents } from './app-routing.module';
     FooterLogComponent,
     NavBarComponent,
     FooterComponent,
+    TabSelectorComponent,
 
   ],
   imports: [
@@ -36,7 +39,7 @@ import { AppRoutingModule,routingComponents } from './app-routing.module';
     MatCardModule,
     DragScrollModule,
     AppRoutingModule,
-   
+    MatTabsModule
   ],
 
   providers: [],

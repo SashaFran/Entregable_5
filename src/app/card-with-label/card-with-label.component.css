@@ -1,21 +1,4 @@
-.card-song{
-    width: 186px;
-    height: 215px;
-    text-align: center;
-    box-sizing: unset;
-    
-}
-.mat-card{
-    padding:0;
-}
-.mat-card-image:first-child{
-    margin: 0;
-}
-
-.mat-card-actions{
-    margin: 0;
-    padding: 0;
-}
+/* 
 .card-song img {
     width: 186px;
     height: 186px;
@@ -42,35 +25,40 @@
 .card{
     border: none !important;
 }
-/* hover play*/
+/* hover play
+ 
+.image-card img {
+    width: 100%;
+  }
+  .image-card img {
+    transform: rotate(0deg) xscale(1.03);
+  }
+
 .image-card i {
     z-index: 4;
-    opacity: 0;
+    visibility: hidden;
     position: absolute;
-    left: 50%;
+    left: 42%;
     bottom: 0%;
     margin: 0px 0px -24px -24px;
-    width: 48px;
-    height: 48px;
+    width: 80px;
+    height: 80px;
     background: url("../../assets/img/svg-images/play.svg") no-repeat center center;
 
     border-radius: 50%;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
     transition: all 0.20s ease-in-out;
   }
-   
-  .image-card img {
-    width: 100%;
-  }
+
+
+  
    
    .image-card i {
     opacity: .8;
-    bottom: 50%;
+    visibility: visible;
+    bottom: 48%;
   }
-   
- .image-card img {
-    transform: rotate(0deg) xscale(1.03);
-  }
+ */
 
 
 
@@ -88,4 +76,68 @@
         font-size: 19px;
         line-height: 22px;
     }
+}
+.card-song{
+    width: 186px;
+    height: 215px;
+    text-align: center;
+    box-sizing: unset;
+    
+}
+.mat-card{
+    padding:0;
+}
+.mat-card-image:first-child{
+    margin: 0;
+}
+
+.mat-card-actions{
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.card-song a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+}
+.card-song a:hover{
+    text-decoration: none;
+
+}
+  
+.flex-column {
+    margin-bottom: 5px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    border: none !important;
+}
+
+.itemsContainer {
+    float:left;
+    position:relative;
+}
+.itemsContainer:hover .play{display:block}
+.play{
+  position : absolute;
+    display:none;
+    top:25%; 
+    width:100px;
+    margin:0 auto; 
+    left:0px;
+    right:0px;
+    z-index:100;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
+    transition: all 0.20s ease-in-out;
+} 
+
+.itemsContainer .image a img{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 13px;
 }

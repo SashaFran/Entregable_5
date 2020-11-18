@@ -1,21 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {MatCardModule} from '@angular/material/card';
-import { DragScrollModule } from 'ngx-drag-scroll';
+import { AppComponent } from './app.component';
+import { AppRoutingModule,routingComponents } from './app-routing.module';
+
+/**single components*/
 import { CardWithLabelComponent } from './card-with-label/card-with-label.component';
 import { CardScrollHorizontalComponent } from './card-scroll-horizontal/card-scroll-horizontal.component';
 import { ButtonGreenComponent } from './button-green/button-green.component';
 import { InputTextComponent } from './input-text/input-text.component';
-
 import { InfoSongComponent } from './info-song/info-song.component';
+/**group */
 import {NavBarLogComponent} from './components/loggeado/nav-bar-log/nav-bar-log.component';
 import {NavBarComponent} from './components/noLoggin/nav-bar/nav-bar.component';
 import { FooterLogComponent } from './components/loggeado/footer-log/footer-log.component';
 import { FooterComponent } from './components/noLoggin/footer/footer.component';
-import { AppComponent } from './app.component';
-import { AppRoutingModule,routingComponents } from './app-routing.module';
+
+/**angular material modules */
 import { TabSelectorComponent } from './tab-selector/tab-selector.component';
-import {MatTabsModule} from '@angular/material/tabs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DragScrollModule } from 'ngx-drag-scroll';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -31,15 +36,15 @@ import {MatTabsModule} from '@angular/material/tabs';
     FooterLogComponent,
     NavBarComponent,
     FooterComponent,
-    TabSelectorComponent,
-
+    TabSelectorComponent
   ],
   imports: [
     BrowserModule,
     MatCardModule,
     DragScrollModule,
     AppRoutingModule,
-    MatTabsModule
+    MatTabsModule,
+    BrowserAnimationsModule
   ],
 
   providers: [],

@@ -1,3 +1,7 @@
+
+#desktop{
+    visibility: visible;
+}
 .central{
     background: rgba(19,80,91,1);
 background: -moz-linear-gradient(top, rgba(19,80,91,1) 0%, rgba(17,157,164,1) 100%);
@@ -9,18 +13,32 @@ background: linear-gradient(to bottom, rgba(19,80,91,1) 0%, rgba(17,157,164,1) 1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13505b', endColorstr='#119da4', GradientType=0 );
 margin-top: 60px;
 height: 90px;
+text-align: center;
 }
-.central p, .central i{
+.central p, .central i, #desktop{
     margin: 0 auto;
     color: white;
-    font-size: 30px;
-    text-align: center;
-    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    vertical-align: middle;
+    display: inline-flex;
+    padding-inline: 8px;
+    margin-left: 80px;
+}
+.central img{
+    visibility: hidden;
 }
 @media screen and (max-width: 767px) {
+    .central img{
+        visibility: visible;
+    }
+    #desktop{
+        visibility: hidden;
+        display: none;
+    }
     .central{
-        display: flex;
-        align-items: center;
+        display: inline-block;
+        text-align: center;
         margin-top: 80px;
         position: absolute;
         top: 12%;
@@ -29,8 +47,13 @@ height: 90px;
         height: 60px;
         margin: 0 auto;
     }
-    .central p{
-        text-align: center;
-        font-size: 25px;
+    .central p, .central i{
+       display: inline-block;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .central p, .central img, .central i{
+        vertical-align: middle;
+        margin: 0;
     }
 }

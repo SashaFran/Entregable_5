@@ -1,0 +1,36 @@
+.central{
+    background: rgba(19,80,91,1);
+background: -moz-linear-gradient(top, rgba(19,80,91,1) 0%, rgba(17,157,164,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(19,80,91,1)), color-stop(100%, rgba(17,157,164,1)));
+background: -webkit-linear-gradient(top, rgba(19,80,91,1) 0%, rgba(17,157,164,1) 100%);
+background: -o-linear-gradient(top, rgba(19,80,91,1) 0%, rgba(17,157,164,1) 100%);
+background: -ms-linear-gradient(top, rgba(19,80,91,1) 0%, rgba(17,157,164,1) 100%);
+background: linear-gradient(to bottom, rgba(19,80,91,1) 0%, rgba(17,157,164,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13505b', endColorstr='#119da4', GradientType=0 );
+margin-top: 60px;
+height: 90px;
+}
+.central p, .central i{
+    margin: 0 auto;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+}
+@media screen and (max-width: 767px) {
+    .central{
+        display: flex;
+        align-items: center;
+        margin-top: 80px;
+        position: absolute;
+        top: 12%;
+        left: 8%;
+        width: 85%;
+        height: 60px;
+        margin: 0 auto;
+    }
+    .central p{
+        text-align: center;
+        font-size: 25px;
+    }
+}

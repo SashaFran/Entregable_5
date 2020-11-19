@@ -1,17 +1,20 @@
 .footer_responsive{
     visibility: hidden;
-}
-.footer{
-    background-color: black;
-    width: 100%;
-    height: 150px;
-    position: fixed;
-    bottom: 0;
-    margin-right: auto;
+    display: none;
 }
 .footer_desktop{
     display: inline-block;
 }
+
+.footer{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    bottom: 0;
+    margin-right: auto;
+}
+
 .footer .footer_desktop .footer_reproductor{
     display: inline-block;
     margin: 0 auto;
@@ -19,21 +22,14 @@
     margin-left: 500px;
     top: 0;
 }
-.video_player{
-    margin-left: 200px;
-    margin-top: 110px;
-    display: inline-flex;
-}
 .barra{
     background-color: #119DA4;
     height: 2px;
     position: relative;
-    float: left;
     width: 500px;
 }
 .video_player-barra{
     display: inline-flex;
-    
 }
 .video_player-barra p{
     color: white;
@@ -84,6 +80,9 @@
 .footer .footer_desktop .footer_cancion span{
    opacity: 0.4;
 }
+#responsive_cancion{
+    visibility: hidden;
+}
 .volumen{
     margin-left: 1474px;
     margin-top: -80px;
@@ -112,6 +111,11 @@
     position: absolute;
     border-radius: 100%;
     top:-5px;
+}
+.video_player{
+    margin-left: 200px;
+    margin-top: 110px;
+    display: inline-flex;
 }
 .video_player i{
     color: #119DA4;
@@ -142,19 +146,22 @@
     margin-left: 225px;
 }
 @media screen and (max-width: 767px) {
+    .footer{
+        height: 150px;
+    }
    .footer_responsive .clasificacion_resp .desplegable_res .corazones_resp{
        visibility: hidden;
+       display: none;
    }
     .footer_desktop{
         visibility: hidden;
         display: none;
     }
-    .footer{
-        height: 150px;
-
-    }
     .footer .footer_responsive{
         visibility: visible;
+        display: contents;
+    }
+    .footer .footer_responsive{
         text-align: center;
         margin:auto;
         height: 200px;
@@ -167,8 +174,8 @@
         font-size: 35px;
         color: #119DA4;
         float: left;
-        margin-left: -190px;
-        margin-top: 30px;
+        margin-left: 30px;
+        margin-top: 35px;
     }
     .footer_responsive .video_player-icon{
         font-size: 30px;
@@ -185,5 +192,58 @@
     }
     .footer_responsive .video_player-icon .fa-step-backward,  .footer_responsive .video_player-icon .fa-step-forward{
         margin-bottom: 50px;
+    }
+    
+    .menu_hambur_resp img{
+        float: right;
+        margin-right: 30px;
+        margin-top: 38px;
+        
+    }
+    .cancion_resp,.cancion_resp #cancion,.cancion_resp #album, .cancion_resp #responsive_cancion{
+        display: inline-block;
+        margin: 0 auto;
+        padding-inline: 10px;
+        text-align: center;
+        color: white;
+        margin-top: 5px;
+    }
+    .reproductor_resp_barra .barra_resp{
+        background-color: #119DA4;
+        height: 2px;
+        position: relative;
+        width: 150px;
+    }
+    .reproductor_resp_barra .circle_respo{
+        vertical-align: middle;
+        width: 15px;
+        height: 15px;
+        background-color: white;
+        border: 2px solid #119DA4;
+        display:inline-block;
+        position: absolute;
+        left:0;
+        right:0;
+        margin:0 auto;
+        border-radius: 100%;
+        top:-5px;
+    }
+    .reproducto_resp{
+        text-align: center;
+    }
+    .reproductor_resp_barra .comienzo_resp,.reproductor_resp_barra .barra_resp,.reproductor_resp_barra .fin_resp{
+        display: inline-block;
+        padding-inline: 5px;
+        margin:  auto;
+        margin-left: 3%;
+    }
+    .fin_resp, .comienzo_resp{
+        color: white;
+        vertical-align: sub;
+        display: inline-block;
+        position: relative;   
+    }
+    #responsive_cancion{
+        visibility: visible;
     }
 }

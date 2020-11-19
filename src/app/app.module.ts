@@ -22,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DragScrollModule } from 'ngx-drag-scroll';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
+import { CancionComponent } from './components/cancion/cancion.component';
 
 
 
@@ -39,7 +40,8 @@ import { MatCardModule } from '@angular/material/card';
     NavBarComponent,
     FooterComponent,
     TabSelectorComponent,
-    BannerComponent
+    BannerComponent,
+    CancionComponent
   ],
   imports: [
     BrowserModule,

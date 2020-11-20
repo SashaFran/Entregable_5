@@ -1,5 +1,6 @@
 
 /* Style tab links */
+
 .tab{
     margin-bottom: 20px;
     display: inline-block;
@@ -35,4 +36,25 @@
     position: relative;
     margin-top: 20px;
     display: inline;
+}
+.mat-tab-group{
+  width: 60%;
+}
+.list{
+  display: inline-block;
+  margin:20px;
+}
+.mat-tab{
+  width: 50%;
+}
+
+.container{
+width: 60%;
+}
+
+::ng-deep.mat-tab-label, ::ng-deep.mat-tab-label-active{
+min-width: 0!important;
+width: 50% !important;
+padding: 3px!important;
+margin: 3px!important;
 }

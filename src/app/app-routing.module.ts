@@ -6,6 +6,7 @@ import{NoLogginEnglobadoComponent} from './components/noLoggin/no-loggin-engloba
 import { TabSelectorComponent } from './tab-selector/tab-selector.component';
 import { CardWithLabelComponent } from './card-with-label/card-with-label.component';
 
+
 const routes: Routes=[
   {path:'home-log',component:LoggeadoEnglobadoComponent},
   {path:'home',component:NoLogginEnglobadoComponent},
@@ -17,4 +18,4 @@ const routes: Routes=[
   exports:[RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents=[LoggeadoEnglobadoComponent,NoLogginEnglobadoComponent,CardWithLabelComponent];
+export const routingComponents=[LoggeadoEnglobadoComponent,NoLogginEnglobadoComponent,TabSelectorComponent];

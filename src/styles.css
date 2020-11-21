@@ -24,9 +24,6 @@ body {
     }
   }
 /* colores */
-.colorverdeoscuro{
-  color: #13505B;
-}
 .backverdeoscuro{
   color: #13505B;
 }
@@ -39,6 +36,7 @@ body {
 .colorverdeclaro{
   color:#119DA4;
 }
+/* botones */
 .fillverdeclaro{
   fill:#119DA4;
 }

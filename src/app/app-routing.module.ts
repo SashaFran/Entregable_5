@@ -6,8 +6,9 @@ import{NoLogginEnglobadoComponent} from './components/noLoggin/no-loggin-engloba
 import { TabSelectorComponent } from './tab-selector/tab-selector.component';
 import { CardWithLabelComponent } from './card-with-label/card-with-label.component';
 
-/** Dai(?*/ 
+
 import { CancionComponent } from './components/cancion/cancion.component';
+
 
 const routes: Routes=[
   {path:'home-log',component:LoggeadoEnglobadoComponent},
@@ -21,4 +22,5 @@ const routes: Routes=[
   exports:[RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents=[LoggeadoEnglobadoComponent,NoLogginEnglobadoComponent,CardWithLabelComponent,CancionComponent];
+export const routingComponents=[LoggeadoEnglobadoComponent,NoLogginEnglobadoComponent,TabSelectorComponent,CancionComponent];
+

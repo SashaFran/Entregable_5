@@ -21,4 +21,4 @@ const routes: Routes=[
   exports:[RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents=[LoggeadoEnglobadoComponent,NoLogginEnglobadoComponent,CardWithLabelComponent,CancionComponent];
+export const routingComponents=[LoggeadoEnglobadoComponent,NoLogginEnglobadoComponent,TabSelectorComponent,CancionComponent];

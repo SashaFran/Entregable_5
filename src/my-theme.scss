@@ -1,0 +1,118 @@
+@import "~@angular/material/theming";
+@include mat-core();
+
+// Custom gray
+$md-gris: (
+    50 : #ededed,
+    100 : #d3d2d2,
+    200 : #b6b4b4,
+    300 : #999696,
+    400 : #838080,
+    500 : #6d6969,
+    600 : #656161,
+    700 : #5a5656,
+    800 : #504c4c,
+    900 : #3e3b3b,
+    A100 : #f6a1a1,
+    A200 : #f27272,
+    A400 : #ff3232,
+    A700 : #ff1919,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+
+// Custom Green
+$md-verde: (
+    50 : #e2eef1,
+    100 : #b6d5dc,
+    200 : #86bac4,
+    300 : #559eac,
+    400 : #30899b,
+    500 : #0c7489,
+    600 : #0a6c81,
+    700 : #086176,
+    800 : #06576c,
+    900 : #034459,
+    A100 : #8bddff,
+    A200 : #58cfff,
+    A400 : #25c0ff,
+    A700 : #0bb9ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+// Custom Red
+$custom-red: (
+  50: #f6e3e8,
+  100: #e9b9c6,
+  200: #db8aa0,
+  300: #cd5b79,
+  400: #c2385d,
+  500: #b71540,
+  600: #b0123a,
+  700: #a70f32,
+  800: #9f0c2a,
+  900: #90061c,
+  A100: #ffbdc4,
+  A200: #ff8a97,
+  A400: #ff576a,
+  A700: #ff3d53,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #ffffff,
+  )
+);
+
+// Custom theme
+
+$custom-theme-accent: mat-palette($md-gris, 500);
+$custom-theme-primary: mat-palette($md-verde, 500);
+$custom-theme-warn: mat-palette($custom-red, 500);
+$custom-theme: mat-light-theme(
+  $custom-theme-primary,
+  $custom-theme-accent,
+  $custom-theme-warn
+);
+@include angular-material-theme($custom-theme);

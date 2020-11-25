@@ -1,17 +1,17 @@
 <mat-tab-group dynamicHeight>
     <mat-tab label="Musica" class="tablink">
       <div class="contenedor">
-        <div class="list"><app-card-scroll-horizontal ></app-card-scroll-horizontal></div>
-        <div class="list"><app-card-scroll-horizontal ></app-card-scroll-horizontal></div>
-        <div class="list"><app-card-scroll-horizontal ></app-card-scroll-horizontal></div>
+        <div  class="list"><app-card-scroll-horizontal [titulo_lista]="titulo" [arraySongs]="array"></app-card-scroll-horizontal></div>
+       <!--  <div [titulo_lista]="titulo_lista" class="list"><app-card-scroll-horizontal ></app-card-scroll-horizontal></div>
+        <div [titulo_lista]="titulo_lista" class="list"><app-card-scroll-horizontal ></app-card-scroll-horizontal></div> -->
     </div>
        
     </mat-tab>
     <mat-tab label="Podcast" class="tablink">
       <div class="contenedor">
-        <div class="list"><app-card-scroll-horizontal ></app-card-scroll-horizontal></div>
-        <div class="list"><app-card-scroll-horizontal ></app-card-scroll-horizontal></div>
-        <div class="list"><app-card-scroll-horizontal ></app-card-scroll-horizontal></div>
+        <!-- <div [titulo_lista]="titulo_lista" class="list"><app-card-scroll-horizontal ></app-card-scroll-horizontal></div>
+        <div [titulo_lista]="titulo_lista" class="list"><app-card-scroll-horizontal ></app-card-scroll-horizontal></div>
+        <div [titulo_lista]="titulo_lista" class="list"><app-card-scroll-horizontal ></app-card-scroll-horizontal></div> -->
     </div>
     </mat-tab>
   </mat-tab-group> 

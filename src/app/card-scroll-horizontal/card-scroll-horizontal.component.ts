@@ -1,22 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, Input, OnInit } from '@angular/core';
+import { SongInfo } from 'src/app/song-info';
 @Component({
   selector: 'app-card-scroll-horizontal',
   templateUrl: './card-scroll-horizontal.component.html',
   styleUrls: ['./card-scroll-horizontal.component.css']
 })
 export class CardScrollHorizontalComponent implements OnInit {
-  arraySongs:any[];
+  
+  @Input() titulo_lista:string = "titulo_lista_auto";
+  @Input() arraySongs:SongInfo[];
+  
   constructor() { 
-    this.arraySongs=[
-      {"image": "../../assets/img/image.png","titlesong": "titulo Cancion"},
-      {"image": "../../assets/img/image.png","titlesong": "titulo Cancion"},
-      {"image": "../../assets/img/image.png","titlesong": "titulo Cancion"},
-      {"image": "../../assets/img/image.png","titlesong": "titulo Cancion"},
-      {"image": "../../assets/img/image.png","titlesong": "titulo Cancion"}
-    ];
   }
-
   ngOnInit(): void {
   }
 

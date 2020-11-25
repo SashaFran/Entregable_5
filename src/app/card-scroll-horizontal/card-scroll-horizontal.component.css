@@ -17,6 +17,9 @@ drag-scroll ::ng-deep.drag-scroll-content{
     display: block;
     white-space: nowrap;
 }
+.drag-scroll ::ng-deep.drag-scroll-wrapper{
+    
+}
 h1{
     margin-left: 15px;
     font-style: normal;

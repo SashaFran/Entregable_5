@@ -6,7 +6,7 @@
     display: grid;
     /* grid-template-columns: 850px 150px 100px; */
     grid-template-columns: calc(100% - 250px) 150px 100px;
-    grid-template-rows: 80px 200px auto 30px; 
+    grid-template-rows: 80px 200px auto 900px; 
     gap: 15px 10px;
     margin-top: 80px;
     margin-left: calc(250px + 2%);
@@ -19,6 +19,9 @@
 }
 .links, .links p, .links img{
     display: inline-block;
+}
+.links img{
+    margin-right: 5px;
 }
 .compartir{
     grid-column: 3;
@@ -104,13 +107,12 @@ display: table;
     height: 40px;
     display: inline-grid;
     /* grid-template-columns: 350px 150px 100px 100px auto; */
-    grid-template-columns: 350px auto 222px;
+    grid-template-columns: 350px auto 250px;
     
     grid-template-rows: 40px 150px 300px auto; 
     gap: 15px 10px;
 }
 .comentarios p{
-    background-color: #ACACAC;
     font-size: 24px;
     color: black;
     justify-self: center;
@@ -119,10 +121,10 @@ display: table;
     width: 100%;
 }
 .caja_comentarios{
-    background-color:  #ACACAC;
     height: 150px;
     grid-row: 2;
     grid-column: 1/3;
+    margin-right: 80px;
 }
 .comentarios button{
     grid-row: 2;
@@ -140,35 +142,62 @@ display: table;
 .cantidad_comentarios{
     grid-row: 3;
     grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 100px 815px 100px;
+    grid-template-rows: auto auto auto;
+    grid-gap: 15px 10px;
 }
-@media screen and (max-width: 767px) {
-    .principal{
-        visibility: hidden;
-        display: none;
-    }
-    .principal_responsive{
-        visibility: visible;
-        display: inline-grid;
-        grid-template-columns: 20px auto 20px;
-        grid-template-rows: 30px 30px auto 30px; 
-        gap: 10px 5px;
-    }
-    .links_responsive{
-        grid-row: 2;
-        grid-column: 2;
-        justify-self: flex-start;
-    }
-    .div_central_responsive{
-        grid-row: 4;
-        grid-column: 2;
-        justify-self: center;
-    }
-    .botones_cancion_responsive img{
-        
-        grid-row: 4;
-        grid-column: 2;
-    }
-    .botones_cancion_responsive{
-        height: 30px;
-    }
+.user_1, .user_2{
+    height: 80px;
+    width: 80px;
+    background-color: #ACACAC;
+    border-radius: 50%;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+}
+.user_3{
+    height: 80px;
+    width: 80px;
+    background-color: #119DA4;
+    border-radius: 50%;
+    grid-column: 3;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+}
+.comentario_1, .comentario_3, .comentario_2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.corazones{
+    align-self: center;
+    justify-self: center;
+}
+.comentario_1, .comentario_2{
+    width: 100%;
+    background-color: #ACACAC;
+    border-radius: 45px;
+    height: 100%;
+    grid-column: 2/4;
+    color: white;
+}
+.comentario_1 p, .comentario_3 p{
+    color: white;
+    justify-self: center;
+    align-self: center;
+}
+.comentario_3{
+    width: 100%;
+    background-color: #119DA4;
+    border-radius: 45px;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 3;
+}
+.user_1 img, .user_2 img, .user_3 img{
+    text-align: center;
+    justify-self: center;
+    align-self: center;
 }

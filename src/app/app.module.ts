@@ -8,7 +8,6 @@ import { CardWithLabelComponent } from './card-with-label/card-with-label.compon
 import { CardScrollHorizontalComponent } from './card-scroll-horizontal/card-scroll-horizontal.component';
 import { ButtonGreenComponent } from './button-green/button-green.component';
 import { InputTextComponent } from './input-text/input-text.component';
-import { InfoSongComponent } from './info-song/info-song.component';
 /**group */
 import {NavBarLogComponent} from './components/loggeado/nav-bar-log/nav-bar-log.component';
 import {NavBarComponent} from './components/noLoggin/nav-bar/nav-bar.component';
@@ -33,7 +32,6 @@ import { CancionComponent } from './components/cancion/cancion.component';
     CardScrollHorizontalComponent,
     ButtonGreenComponent,
     InputTextComponent,
-    InfoSongComponent,
     routingComponents,
     NavBarLogComponent,
     FooterLogComponent,

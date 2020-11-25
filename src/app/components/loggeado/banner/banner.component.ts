@@ -9,15 +9,18 @@ import { Router } from '@angular/router';
 export class BannerComponent implements OnInit {
 
   isShow: boolean;
-
-  constructor(
-    private router: Router
-  ) {
+  constructor( private router: Router) {
+ 
+    
+    // this.isShow = this.router.url != '/misPlaylist';
+    // this.isShow = this.router.url != '/cancion';
+    if ((router.url === '/miPlaylist')&&(router.url === '/cancion')) {
+      this.isShow = true;
+    }  else {
+      this.isShow = false;
+    }
     console.log(this.router.url);
     console.log("Funciona el banner");
-    this.isShow = this.router.url != '/cancion';
-    this.isShow = this.router.url != '/misPlaylist';
-
   }
 
   ngOnInit(): void {

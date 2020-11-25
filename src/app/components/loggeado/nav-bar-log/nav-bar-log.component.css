@@ -5,7 +5,7 @@
       margin-left: 20px;
   }
   .toolbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -92,7 +92,7 @@
       margin-top: 25px;
   }
   .side-panel_contacto{
-      margin-top: 125px;
+      margin-top: 155px;
       text-align: center;
       align-items: center;
   }

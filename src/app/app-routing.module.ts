@@ -15,7 +15,7 @@ const routes: Routes=[
     path: '',
     component: LoggeadoEnglobadoComponent,
   children:[
-    {path: 'cancion', component:CancionComponent},
+    {path: 'cancion', component: CancionComponent},
     {path: 'misPlaylist', component: MisPlaylistComponent}
   ]
   },

@@ -2,11 +2,9 @@
     visibility: hidden;
     display: none;
 }
-.footer_desktop{
-    display: inline-block;
-}
 
 .footer{
+
     background-color: black;
     position: fixed;
     width: 100%;
@@ -14,13 +12,15 @@
     bottom: 0;
     margin-right: auto;
 }
-
+.footer_desktop{
+    display: grid;
+    grid-template-columns: 445px auto 200px; 
+}
 .footer .footer_desktop .footer_reproductor{
-    display: inline-block;
-    margin: 0 auto;
-    position: absolute;
-    margin-left: 500px;
-    top: 0;
+    justify-content: center;
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 100px;
 }
 .barra{
     background-color: #119DA4;
@@ -61,16 +61,18 @@
     
 }
 .footer .footer_desktop .footer_clasificacion{
-    position: relative;
-    margin-left: 270px;
-    margin-top: -70px;
+   grid-column: 1;
+   grid-row: 1;
+   justify-self: end;
+   margin: 10px;
+   margin-top:0;
 }
 .footer .footer_desktop .footer_cancion{
     color: white;
-    position: relative;
-    margin-top: 15px;
-    left: 270px;
-    bottom: 0;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: end;
+    margin: 6px;
 }
 .footer .footer_desktop .footer_cancion p{
     font-weight: bold;
@@ -84,23 +86,25 @@
     visibility: hidden;
 }
 .volumen{
-    margin-left: 1474px;
-    margin-top: -80px;
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: start;
+    display: flex;
 }
-.fa-volume-up{
+.volumen img{
     color: white;
     position: relative;
     font-size: 35px;
     display: inline-flex;
     margin-right: 8px;
 }
-.barra_volume{
+.footer .footer_desktop .barra_volume{
     background-color: #119DA4;
     position: absolute;
     height: 2px;
     width: 120px;
-    margin-top: -23px;
-    margin-left: 50px;
+    align-self: center;
+    margin-left: 35px;
 }
 .circle_volume{
     vertical-align: middle;
@@ -113,9 +117,9 @@
     top:-5px;
 }
 .video_player{
-    margin-left: 200px;
-    margin-top: 110px;
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    align-items: initial;
 }
 .video_player i{
     color: #119DA4;
@@ -137,7 +141,7 @@
 }
 .footer .footer_desktop .fa-step-backward{
     font-size:  40px;
-    margin-top: 2px;
+    margin-top: -15px;
     margin-left: 130px;
 }
 .footer .footer_desktop .fa-step-forward{

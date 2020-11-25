@@ -13,6 +13,7 @@ export class CardScrollHorizontalComponent implements OnInit {
   constructor() { 
   }
   ngOnInit(): void {
+    
   }
 
 }

@@ -28,6 +28,7 @@
 }
 .card-song a:hover{
     text-decoration: none;
+    color: #0C7489;
 }
   
 .flex-column {

@@ -10,7 +10,7 @@ card scroll horizontal
 }
 drag-scroll ::ng-deep.drag-scroll-content{
     width: 100%;
-    height: calc(100% + 30px);
+    height: 300px!important;
     overflow: hidden auto;
     display: block;
     white-space: nowrap;

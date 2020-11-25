@@ -1,0 +1,95 @@
+.principal_mp{
+    grid-template-columns: 50px 600px 400px 50px;
+    grid-template-rows: 80px 80px auto;
+    grid-gap: 15px 5px;
+    display: grid;
+    justify-content: end;
+    background-color: #D7D9CE
+}
+.titulo_principal{
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: start;
+    font-weight: bolder;
+}
+ .principal_mp .titulo_principal h1{
+    color: #0C7489;
+    font-weight: bolder;
+    font-size: 80px;
+
+}
+.albumes{
+    grid-column: 2;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 190px);
+    grid-template-rows: repeat(3, auto);
+    justify-self: start;
+}
+.album p{
+    margin-left: 20%;
+    font-size: 20px;
+}
+.canciones{
+    grid-column: 3;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    margin-top: 120px;
+}
+.canciones p, .header_canciones p, .header_canciones i{
+    display: inline-block;
+    margin: 15px;
+    margin-left: 5px;
+}
+.header_canciones{
+    grid-column: 1;
+    display: grid;
+    color: #0C7489;
+    grid-template-columns: 50px 200px 50px 40px;
+}
+.header_canciones h2, .header_canciones i{
+    font-size: 40px;
+    font-weight: bold;
+}
+.header_canciones i{
+    font-weight: lighter;
+}
+.canciones img{
+    grid-column: 4;
+    justify-self: center;
+    align-self: center;
+}
+#numeral{
+    grid-column: 1;
+    justify-self: auto;
+    align-self: center;
+}
+#titulo{
+    grid-column: 2;
+    align-self: center;
+}
+#icon{
+    grid-column: 3;
+    justify-self: center;
+    align-self: center;
+}
+.renglon_1, .renglon_2, .renglon_3, .renglon_4, .renglon_5{
+    grid-template-columns: 50px 200px 50px 40px;
+    display: grid;
+    align-self: center;
+    font-size: 20px;
+    grid-template-rows: 45px;
+    color: black;
+}
+.fa-clock-o{
+    color: #0C7489;
+    font-size: 18px;
+}
+.canciones img{
+    fill: #0C7489;
+    height: 33px;
+}
+.albumes img{
+    height: 150px;
+}

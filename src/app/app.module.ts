@@ -25,6 +25,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { UserComponent } from './components/interactivos/user/user.component';
 import { NotificacionesComponent } from './components/interactivos/notificaciones/notificaciones.component';
+import { MisPlaylistComponent } from './components/mis-playlist/mis-playlist.component';
 
 
 
@@ -46,7 +47,8 @@ import { NotificacionesComponent } from './components/interactivos/notificacione
     BannerComponent,
     CancionComponent,
     UserComponent,
-    NotificacionesComponent
+    NotificacionesComponent,
+    MisPlaylistComponent
   ],
   imports: [
     BrowserModule,

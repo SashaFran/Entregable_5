@@ -1,3 +1,7 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+/* Intalar packeage de Bootstrap
+npm install bootstrap --save */
+
 /* Tipo de letra y tamaño */
 body {
     font-family: 'Roboto', sans-serif;

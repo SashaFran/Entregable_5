@@ -1,54 +1,53 @@
-
 /* Style tab links */
 
 .tab{
-    margin-bottom: 20px;
-    display: inline-block;
-    width: 100%;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
 }
 .tablink {
-    background-color: transparent;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    width: 50%;
-    margin-bottom: 20px;
-  }
-  
-  .tablink:hover {
-    font-weight: bolder;
-    border-bottom: 5px solid!important ;
-  }
-  .active{
-    font-weight: bolder;
-    border-bottom: 5px solid ;
+  background-color: transparent;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.tablink:hover {
+  font-weight: bolder;
+  border-bottom: 5px solid!important ;
+}
+.active{
+  font-weight: bolder;
+  border-bottom: 5px solid ;
 }
 
 .container-scrolls{
-    position: relative;
-    left: 25%;
-    width: 60%;
-    margin: 10px;    
+  position: relative;
+  left: 25%;
+  width: 60%;
+  margin: 10px;    
 }
 .contenedor{
-    position: relative;
-    margin-top: 20px;
-    display: inline;
-    width: 100%;
-    height: auto;
+  position: relative;
+  margin-top: 20px;
+  display: inline;
+  width: 100%;
+  height: auto;
 }
 .mat-tab-group{
-  width: 60%;
+width: 60%;
 }
 .list{
-  display: inline-block;
-  margin:20px;
-  width: 99%;
+display: inline-block;
+margin:20px;
+width: 99%;
 }
 .mat-tab{
-  width: 50%;
+width: 50%;
 }
 
 .container{
@@ -60,4 +59,13 @@ min-width: 0!important;
 width: 50% !important;
 padding: 3px!important;
 margin: 3px!important;
+}
+
+@media (max-width: 640px) {
+.contenedor{
+  width: 98%;
+  }
+  .mat-tab-group{
+    width: 98%;
+  }
 }

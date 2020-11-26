@@ -69,11 +69,6 @@
 .dropdown-menu{
     background-color: black;
 }
-.filtro{
-    left: 50%;
-right: auto;
-transform: translateX(-80%);
-}
 .dropdown-menu span, .dropdown-menu h6{
     color: #119DA4;
 }
@@ -91,8 +86,28 @@ transform: translateX(-80%);
     font-size: 20px;
     text-align: center;
 }
-.filtro{
-    display: inline-flex;
+.divider_0, .divider_1, .divider_2{
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    line-height: 30px;
+}
+.dropdown-menu-right{
+    position: absolute;
+will-change: transform !important;
+top: 0px !important;
+left: 0px !important;
+transform: translate3d(-400px, 38px, 0px) !important;
+}
+.buscador .opcion_1 .dropdown-menu{
+    position: absolute;
+    will-change: transform;
+    top: 0px;
+    left: 0px;
+    transform: translate3d(0px, 39px, 0px);
+    width: 100% !important;
 }
   .side-panel{
     width: 250px;

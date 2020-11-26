@@ -140,6 +140,9 @@ display: table;
     
     /* margin-left: 90px; */
 }
+#p_comentarios{
+    color: white;
+}
 .cantidad_comentarios{
     grid-row: 3;
     grid-column: 1/2;

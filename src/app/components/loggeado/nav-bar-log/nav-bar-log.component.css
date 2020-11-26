@@ -32,9 +32,9 @@
       margin-top: 9px;
       border-radius: 9px;
       width: 300px;
-      opacity: 0.5;
+      background-color: lightgray;
   }
-  .buscador i{
+  .buscador img{
       margin: 8px;
       color: white;
       font-size: 30px;
@@ -69,8 +69,20 @@
 .dropdown-menu{
     background-color: black;
 }
-.dropdown-menu span{
+.filtro{
+    left: 50%;
+right: auto;
+transform: translateX(-80%);
+}
+.dropdown-menu span, .dropdown-menu h6{
     color: #119DA4;
+}
+.dropdown-menu ul{
+    list-style: circle;
+    color: #119DA4;
+}
+.dropdown-menu a{
+    color: white;
 }
 .dropdown-item{
     pointer-events: none;
@@ -78,6 +90,9 @@
 .dropdown-header{
     font-size: 20px;
     text-align: center;
+}
+.filtro{
+    display: inline-flex;
 }
   .side-panel{
     width: 250px;

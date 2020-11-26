@@ -17,8 +17,25 @@
 .mat-card-actions{
     margin: 10px;
     padding: 0;
+
+    font-weight: bold;
+    font-size: 20px;
+  
     overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
 }
+
+.mat-card-actions > span
+{
+  font-weight: normal;
+  color: black;
+  font-size: 25px;
+  line-height: 29px;
+}
+
 
 .card-song a{
     font-style: normal;

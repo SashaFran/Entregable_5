@@ -38,5 +38,8 @@ h1{
         font-size: 19px;
         line-height: 22px;
     }
+    drag-scroll ::ng-deep.drag-scroll-content{
+        height: 220px!important;
+    }
 
 } 

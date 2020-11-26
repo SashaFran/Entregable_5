@@ -39,7 +39,9 @@
   height: auto;
 }
 .mat-tab-group{
-width: 60%;
+width: 100%;
+padding:20px;
+padding-bottom: 150px;
 }
 .list{
 display: inline-block;
@@ -61,11 +63,16 @@ padding: 3px!important;
 margin: 3px!important;
 }
 
+
 @media (max-width: 640px) {
 .contenedor{
   width: 98%;
   }
   .mat-tab-group{
     width: 98%;
+    padding-bottom: 150px;
+  }
+  .list{
+    margin:5px;
   }
 }

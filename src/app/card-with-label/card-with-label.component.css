@@ -85,6 +85,9 @@
 .mat-card:not() {
     box-shadow:none !important;
 }
+.playButton{
+    fill:#119DA4;
+}
 
 @media (max-width: 640px) {
     .card-song{

@@ -304,4 +304,7 @@ align-self: end;
    .dropdown-toggle::after {
     display:none;
 }
+    .responsive{
+        display: none;
+    }
 }

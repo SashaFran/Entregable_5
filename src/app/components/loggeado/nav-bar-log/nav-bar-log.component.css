@@ -194,6 +194,7 @@ transform: translate3d(-400px, 38px, 0px) !important;
         position: fixed;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     .responsive_user{
         visibility: hidden;
         display: none;
@@ -204,10 +205,9 @@ transform: translate3d(-400px, 38px, 0px) !important;
     .configuracion_user p, .configuracion_user img{
         display: inline-block;
     }
-=======
-    
-    
->>>>>>> 330ccbf8c1244bfffc63dba8aff8e1d855cdc6ae
+    .logo-mobile{
+        display: none;
+    }
   @media screen and (max-width: 767px) {
       .toolbar{
           position: fixed;
@@ -260,5 +260,12 @@ transform: translate3d(-400px, 38px, 0px) !important;
         width: 25px;
         background-color: white;
         border-radius: 50%;
+     }
+     .responsive{
+         display: none;
+     }
+     .logo-mobile{
+         display: block;
+         width: 58px;
      }
   }

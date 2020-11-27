@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { AppRoutingModule,routingComponents } from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 
 /**single components*/
 import { CardWithLabelComponent } from './card-with-label/card-with-label.component';
@@ -25,6 +25,8 @@ import { MatCardModule } from '@angular/material/card';
 import { UserComponent } from './components/interactivos/user/user.component';
 import { NotificacionesComponent } from './components/interactivos/notificaciones/notificaciones.component';
 import { MisPlaylistComponent } from './components/mis-playlist/mis-playlist.component';
+import { NoLogginEnglobadoComponent } from './components/noLoggin/no-loggin-englobado/no-loggin-englobado.component';
+import { LoggeadoEnglobadoComponent } from './components/loggeado/loggeado-englobado/loggeado-englobado.component';
 
 
 
@@ -36,7 +38,6 @@ import { MisPlaylistComponent } from './components/mis-playlist/mis-playlist.com
     CardScrollHorizontalComponent,
     ButtonGreenComponent,
     InputTextComponent,
-    routingComponents,
     NavBarLogComponent,
     FooterLogComponent,
     NavBarComponent,
@@ -46,7 +47,9 @@ import { MisPlaylistComponent } from './components/mis-playlist/mis-playlist.com
     CancionComponent,
     UserComponent,
     NotificacionesComponent,
-    MisPlaylistComponent
+    MisPlaylistComponent,
+    LoggeadoEnglobadoComponent,
+    NoLogginEnglobadoComponent,
   ],
   imports: [
     BrowserModule,

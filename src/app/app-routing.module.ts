@@ -14,14 +14,14 @@ const routes: Routes=[
     path: '',
     component: LoggeadoEnglobadoComponent,
   children:[
+    {path: 'home-log', component:TabSelectorComponent},
     {path: 'cancion', component: CancionComponent},
     {path: 'misPlaylist', component: MisPlaylistComponent}
   ]
   },
   
-  {path:'home-log', component:LoggeadoEnglobadoComponent},
   {path:'home', component:NoLogginEnglobadoComponent},
-  {path:'prueba', component:TabSelectorComponent},
+
   
 ];
 
@@ -30,4 +30,3 @@ const routes: Routes=[
   exports:[RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents=[LoggeadoEnglobadoComponent,NoLogginEnglobadoComponent,CancionComponent, MisPlaylistComponent];

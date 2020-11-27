@@ -85,13 +85,17 @@
         <div class="dropdown-menu">
             <h2 class="dropdown-header">Configuracion del usuario</h2>
             <a class="dropdown-item item_4" href="#">
-                <img src="../assets/img/svg-images/config.svg" alt="Rueda config" style="height: 30px; fill: white;">
+                <img src="../assets/img/svg-images/config.svg" alt="Rueda config" >
                  <p> Configuración de Perfil</p>
+            </a>
+            <a class="dropdown-item resp_5" href="#">
+                <img src="../assets/img/svg-images/cerrarsesion.svg" alt="Cerrar Sesion">
+                <p>Cerrar Sesión</p>
             </a>
 
         </div>
     </div>
-        <div class="dropdown dropleft">
+        <div class="dropdown dropleft responsive_user">
             <img src="../assets/img/svg-images/user.svg" alt="Usuario" class="btn dropdown-toggle" aria-hidden="true" href="#"
                 role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                 style="height: 45px;" />
@@ -126,7 +130,7 @@
 </div>
 </div>
 <div class="side-panel">
-    <img class="logo" src="./assets/img/svg-images/logo with label.svg">
+    <a routerLink="/home-log"><img class="logo" src="./assets/img/svg-images/logo with label.svg"></a>
     <div class="side-panel_informacion">
         <h4><i class="fa fa-music" aria-hidden="true"><a routerLink="/misPlaylist">Mis Playlist</a></i></h4>
         <h4><i class="fa fa-star" aria-hidden="true"></i>Favoritos</h4>

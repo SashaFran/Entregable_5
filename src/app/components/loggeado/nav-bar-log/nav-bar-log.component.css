@@ -193,7 +193,9 @@ transform: translate3d(-400px, 38px, 0px) !important;
         border: 2px solid red;
         position: fixed;
     }
-    
+    .logo-mobile{
+        display: none;
+    }
     
   @media screen and (max-width: 767px) {
       .toolbar{
@@ -247,5 +249,12 @@ transform: translate3d(-400px, 38px, 0px) !important;
         width: 25px;
         background-color: white;
         border-radius: 50%;
+     }
+     .responsive{
+         display: none;
+     }
+     .logo-mobile{
+         display: block;
+         width: 58px;
      }
   }

@@ -22,8 +22,7 @@ const routes: Routes=[
   },
   {path:'home',component:NoLogginEnglobadoComponent},
   {path:'iniciar-sesion',component:SesionComponent},
-  {path:'registrarse',component:RegistroComponent},
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path:'registrarse',component:RegistroComponent}
 ];
 @NgModule({
   imports:[RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],

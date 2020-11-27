@@ -193,6 +193,7 @@ transform: translate3d(-400px, 38px, 0px) !important;
         border: 2px solid red;
         position: fixed;
     }
+<<<<<<< HEAD
     .responsive_user{
         visibility: hidden;
         display: none;
@@ -203,6 +204,10 @@ transform: translate3d(-400px, 38px, 0px) !important;
     .configuracion_user p, .configuracion_user img{
         display: inline-block;
     }
+=======
+    
+    
+>>>>>>> 330ccbf8c1244bfffc63dba8aff8e1d855cdc6ae
   @media screen and (max-width: 767px) {
       .toolbar{
           position: fixed;

@@ -193,6 +193,8 @@ transform: translate3d(-400px, 38px, 0px) !important;
         border: 2px solid red;
         position: fixed;
     }
+    
+    
   @media screen and (max-width: 767px) {
       .toolbar{
           position: fixed;

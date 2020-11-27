@@ -40,10 +40,10 @@ export class TabSelectorComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.reverseArray=cloneDeep(this.array);
-    this.reverseArray.reverse();
-    this.reversePodcast=cloneDeep(this.podcast);
-    this.reversePodcast.reverse();
+    // this.reverseArray=cloneDeep(this.array);
+    // this.reverseArray.reverse();
+    // this.reversePodcast=cloneDeep(this.podcast);
+    // this.reversePodcast.reverse();
   }
 
 }

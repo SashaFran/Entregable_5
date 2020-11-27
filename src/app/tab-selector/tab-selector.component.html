@@ -2,7 +2,7 @@
     <mat-tab label="Musica" class="tablink">
       <div class="contenedor">
         <div  class="list"><app-card-scroll-horizontal [titulo_lista]="titulo[0]" [arraySongs]="array"></app-card-scroll-horizontal></div>
-        <div  class="list"><app-card-scroll-horizontal [titulo_lista]="titulo[1]" [arraySongs]="reverseArray"></app-card-scroll-horizontal></div>
+        <div  class="list"><app-card-scroll-horizontal [titulo_lista]="titulo[1]" [arraySongs]="array"></app-card-scroll-horizontal></div>
         <div  class="list"><app-card-scroll-horizontal [titulo_lista]="titulo[2]" [arraySongs]="array"></app-card-scroll-horizontal></div>
         <div  class="list"><app-card-scroll-horizontal [titulo_lista]="titulo[3]" [arraySongs]="lista"></app-card-scroll-horizontal></div> 
     </div>
@@ -11,21 +11,9 @@
     <mat-tab label="Podcast" class="tablink">
       <div class="contenedor">
         <div  class="list"><app-card-scroll-horizontal [titulo_lista]="titulo[0]" [arraySongs]="podcast"></app-card-scroll-horizontal></div>
-        <div  class="list"><app-card-scroll-horizontal [titulo_lista]="titulo[1]" [arraySongs]="reversePodcast"></app-card-scroll-horizontal></div>
+        <div  class="list"><app-card-scroll-horizontal [titulo_lista]="titulo[1]" [arraySongs]="podcast"></app-card-scroll-horizontal></div>
         <div  class="list"><app-card-scroll-horizontal [titulo_lista]="titulo[2]" [arraySongs]="podcast"></app-card-scroll-horizontal></div>
-        <div  class="list"><app-card-scroll-horizontal [titulo_lista]="titulo[4]" [arraySongs]="reversePodcast"></app-card-scroll-horizontal></div>
+        <div  class="list"><app-card-scroll-horizontal [titulo_lista]="titulo[4]" [arraySongs]="podcast"></app-card-scroll-horizontal></div>
     </div>
     </mat-tab>
   </mat-tab-group> 
-
-
-<!-- <div class=" container-scrolls ">
-    <div class="tab">
-        <button class="tablink active colorverde"  onclick="">Musica</button>
-        <button class="tablink colorverdeclaro" onclick="">Podcast</button>
-    </div>
-    <div class="contenedor">
-       
-    </div>
-    
-</div>   -->

@@ -8,6 +8,10 @@ import { CardWithLabelComponent } from './card-with-label/card-with-label.compon
 import { CardScrollHorizontalComponent } from './card-scroll-horizontal/card-scroll-horizontal.component';
 import { ButtonGreenComponent } from './button-green/button-green.component';
 import { InputTextComponent } from './input-text/input-text.component';
+import { TabSelectorComponent } from './tab-selector/tab-selector.component';
+import { NotificacionesComponent } from './components/interactivos/notificaciones/notificaciones.component';
+import { MisPlaylistComponent } from './components/mis-playlist/mis-playlist.component';
+import { UserComponent } from './components/interactivos/user/user.component';
 /**group */
 import {NavBarLogComponent} from './components/loggeado/nav-bar-log/nav-bar-log.component';
 import {NavBarComponent} from './components/noLoggin/nav-bar/nav-bar.component';
@@ -17,16 +21,11 @@ import { BannerComponent } from './components/loggeado/banner/banner.component';
 import { CancionComponent } from './components/cancion/cancion.component';
 
 /**angular material modules */
-import { TabSelectorComponent } from './tab-selector/tab-selector.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DragScrollModule } from 'ngx-drag-scroll';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
-import { UserComponent } from './components/interactivos/user/user.component';
-import { NotificacionesComponent } from './components/interactivos/notificaciones/notificaciones.component';
-import { MisPlaylistComponent } from './components/mis-playlist/mis-playlist.component';
-
-
 
 
 @NgModule({
@@ -49,6 +48,14 @@ import { MisPlaylistComponent } from './components/mis-playlist/mis-playlist.com
     MisPlaylistComponent
   ],
   imports: [
+    BrowserModule,
+    MatCardModule,
+    DragScrollModule,
+    AppRoutingModule,
+    MatTabsModule,
+    BrowserAnimationsModule
+  ],
+  exports: [
     BrowserModule,
     MatCardModule,
     DragScrollModule,

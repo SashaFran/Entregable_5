@@ -193,8 +193,6 @@ transform: translate3d(-400px, 38px, 0px) !important;
         border: 2px solid red;
         position: fixed;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     .responsive_user{
         visibility: hidden;
         display: none;
@@ -203,6 +201,12 @@ transform: translate3d(-400px, 38px, 0px) !important;
         height: 30px;
     }
     .configuracion_user p, .configuracion_user img{
+        display: inline-block;
+    }
+    .user_desktop img{
+        height: 30px;
+    }
+    .user_desktop p, .user_desktop img{
         display: inline-block;
     }
     .logo-mobile{

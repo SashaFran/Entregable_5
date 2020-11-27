@@ -75,10 +75,18 @@
 .renglon_1, .renglon_2, .renglon_3, .renglon_4, .renglon_5{
     grid-template-columns: 50px 200px 50px 40px;
     display: grid;
+    justify-self: center;
     align-self: center;
     font-size: 20px;
     grid-template-rows: 45px;
     color: black;
+}
+.renglon_1:hover, .renglon_2:hover, .renglon_3:hover, .renglon_4:hover, .renglon_5:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.renglon_1 img, .renglon_2 img, .renglon_3 img, .renglon_4 img, .renglon_5 img{
+    justify-self: center;
+    align-self: center;
 }
 .fa-clock-o{
     color: #0C7489;

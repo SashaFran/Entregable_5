@@ -3,42 +3,10 @@
         <h1>MIS PLAYLISTS</h1>
     </div>
     <div class="albumes">
-        <div class="album">
-            <img src="./assets/img/image.png" alt="album_1">
-             <p> PlayList 1</p>
-        </div>
-        <div class="album"> 
-            <img src="./assets/img/image.png" alt="album_2">
-            <p> PlayList 2</p>
-        </div>
-        <div class="album">
-            <img src="./assets/img/image.png" alt="album_3">
-            <p> PlayList 3</p>
-        </div>
-        <div class="album">
-            <img src="./assets/img/image.png" alt="album_4">
-            <p> PlayList 4</p>
-        </div>
-        <div class="album">
-            <img src="./assets/img/image.png" alt="album_5">
-            <p> PlayList 5</p>
-        </div>
-        <div class="album">
-            <img src="./assets/img/image.png" alt="album_6">
-            <p> PlayList 6</p>
-        </div>
-        <div class="album">
-            <img src="./assets/img/image.png" alt="album_7">
-            <p> PlayList 7</p>
-        </div>
-        <div class="album">
-            <img src="./assets/img/image.png" alt="album_8">
-            <p> PlayList 8</p>
-        </div>
-        <div class="album">
-            <img src="./assets/img/image.png" alt="album_9">
-            <p> PlayList 9</p>
-        </div>
+        
+        <app-card-with-label *ngFor="let item of array" drag-scroll-item class="card" [item]="item"></app-card-with-label>
+        
+        
     </div>
 
     <div class="canciones">

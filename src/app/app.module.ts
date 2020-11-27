@@ -32,6 +32,7 @@ import { PlanesCardComponent } from './planes-card/planes-card.component';
 import { InicioMobileComponent } from './inicio-mobile/inicio-mobile.component';
 import { RegistroComponent } from './registro/registro.component';
 import { SesionComponent } from './sesion/sesion.component';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -66,7 +67,8 @@ import { SesionComponent } from './sesion/sesion.component';
     DragScrollModule,
     AppRoutingModule,
     MatTabsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
 
   providers: [],

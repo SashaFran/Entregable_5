@@ -289,8 +289,15 @@ margin-right: 30px;
    }
    .dropdown-item{
        color: white;
+         -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
    }
    .dropdown-item:hover{
        pointer-events:none;
    }
+   .dropdown-toggle::after {
+    display:none;
+}
 }

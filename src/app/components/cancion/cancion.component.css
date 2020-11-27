@@ -1,3 +1,6 @@
+.pre-principal {
+    background-color: #ACACAC;
+}
 .principal_responsive{
     visibility: hidden;
     display: none;
@@ -9,7 +12,8 @@
     grid-template-columns: calc(100% - 250px) 150px 100px;
     grid-template-rows: 80px 200px auto 820px; 
     gap: 15px 10px;
-    margin-top: 80px;
+    /* margin-top: 80px; */
+    padding-top: 80px;
     margin-left: calc(250px + 2%);
     margin-right: 2%;
 }

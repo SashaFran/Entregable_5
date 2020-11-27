@@ -1,0 +1,14 @@
+.principal_notificaciones{
+    width: 366px;
+    height: 252px;
+    background-color: black;
+}
+span{
+    color: #0C7489;
+}
+.principal_notificaciones p, .notificaciones span{
+    font-size: 16px;
+}
+.principal_notificaciones p{
+    color: white;
+}

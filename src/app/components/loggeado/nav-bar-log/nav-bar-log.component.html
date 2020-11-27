@@ -5,17 +5,100 @@
     <i class="fa fa-search" aria-hidden="true"></i>
 </div>
 <div class="buscador">
-    <i class="fa fa-search" aria-hidden="true"></i>
-    <input type="text">
-    
-</div>
+    <img src="../assets/img/svg-images/buscar.svg" alt="Buscador" style="height: 30px;">
+    <div class="dropdown opcion_1">
+    <input type="text" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <div class="dropdown-menu">
+        <h6 class="dropdown-header">Tus últimas busquedas:</h6>
+        <a class="dropdown-item" href="#">Tini Stoessel</a>
+        <a class="dropdown-item" href="#">Correr</a>
+        <div class="dropdown-divider"></div>
+        <h6 class="dropdown-header">Lo más buscado:</h6>
+        <a class="dropdown-item" href="#">Linkin Park</a>
+        <a class="dropdown-item" href="#">Twenty One Pilots</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <img src="../assets/img/svg-images/filtro.svg" alt="Filtro busqueda" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="height: 30px;">
+      <div class="dropdown-menu filtro dropdown-menu-right">
+        <div class="divider_0">
+        <h6 class="dropdown-header">Ordenar por:</h6>
+        <ul>
+        <li><a class="dropdown-item" href="#">Más Reciente</a></li>
+        <li><a class="dropdown-item" href="#">Más Escuchado</a></li>
+        <li><a class="dropdown-item" href="#">Mejor Valorado</a></li>
+        </ul>
+        </div><div class="divider_1">
+        <h6 class="dropdown-header">Fecha estreno:</h6>
+        <ul>
+        <li><a class="dropdown-item" href="#">Última semana</a></li>
+        <li><a class="dropdown-item" href="#">Último mes</a></li>
+        </ul>
+        </div><div class="divider_2">
+        <h6 class="dropdown-header">Duración:</h6>
+        <ul>
+        <li><a class="dropdown-item" href="#">+3</a></li>
+        <li><a class="dropdown-item" href="#">-3</a></li>
+        </ul>
+    </div></div> 
+    </div>
+    </div>
+
 <div class="user">
-    <i class="fa fa-bell" aria-hidden="true"></i>
-    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+    
+
+    <div class="dropdown dropleft">
+        <img src="../assets/img/svg-images/notification-alert.svg" alt="Notificacion" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="height: 45px;"/>
+        <div class="dropdown-menu ">
+            <h2 class="dropdown-header">Configuracion del usuario</h2>
+            <a class="dropdown-item" href="#">
+                <div class="item_1">
+                    <img src="../assets/img/svg-images/info.svg" alt="Notificacion" style="height: 30px;">
+                    <div class="item_1_text">
+                        <p>Te recomendamos hacer ejercicio.</p>
+                        <p> Te sugerimos <span>Correr</span> para motivarte!</p>
+                    </div>
+                </div>
+            </a>
+            <a class="dropdown-item" href="#">
+                <div class="item_2">
+                    <img src="../assets/img/svg-images/info.svg" alt="Notificacion" style="height: 30px; "> 
+                    <div class="item_2_text">
+                        <p>Es viernes por la noche y los sabemos!</p>
+                        <p> lo nuevo de <span>Tini Stoessel</span>!</p>
+                    </div>
+                </div>
+            </a>
+            <a class="dropdown-item" href="#">
+                <div class="item_3">
+                    <img src="../assets/img/svg-images/info.svg" alt="Notificacion" style="height: 30px;">
+                    <div class="item_3_text">
+                        <p>Es Sábado de programar.</p>
+                        <p>  Tenemos una <span>PlayList</span> para impulsarte.</p>
+                    </div>  
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="dropdown dropleft">
+        <img src="../assets/img/svg-images/user.svg" alt="Usuario" class="btn dropdown-toggle" aria-hidden="true" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="height: 45px;"/>
+        <div class="dropdown-menu">
+            <h2 class="dropdown-header">Configuracion del usuario</h2>
+            <a class="dropdown-item item_4" href="#">
+                        <img src="../assets/img/svg-images/config.svg" alt="Rueda config" style="height: 30px; fill: white;">
+                        <p> Configuración de Perfil</p>
+            </a>
+            <a class="dropdown-item item_5" href="#">
+                    <img src="../assets/img/svg-images/cerrarsesion.svg" alt="Cerrar Sesion" style="height: 30px; fill: white;">
+                    <p>Cerrar Sesión</p>
+            </a>
+        </div>
+    </div>
+
     <div class="user_notificaciones">
     </div>
 </div>
-
+</div>
 <div class="side-panel">
     <h2>SpoilerFive</h2>
     <div class="side-panel_informacion">
@@ -31,8 +114,8 @@
         </ul>        
     </div>
     <div class="side-panel_contacto">
-        <i class="fa fa-envelope" aria-hidden="true"></i>
-        <i class="fa fa-question-circle" aria-hidden="true"></i>
+        <img src="../assets/img/svg-images/envelope.svg" alt="Carta contacto" style="height: 18px;">
+        <img src="../assets/img/svg-images/ayuda.svg" alt="Ayuda" style="height: 20px;">
         <div>
             <a href="" >Contacto</a>
             <a href="" >Ayuda</a>
@@ -40,9 +123,8 @@
     </div>
 
     <div class="side-panel_img">
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <img src="../assets/img/svg-images/instagram.svg" alt="Instagram" style="height: 40px;">
+        <img src="../assets/img/svg-images/twitter.svg" alt="Twitter"style="height: 40px;">
+        <img src="../assets/img/svg-images/facebook.svg" alt="Facebook"style="height: 40px;">
     </div>
-</div>
 </div>

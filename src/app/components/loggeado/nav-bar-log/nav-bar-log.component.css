@@ -5,13 +5,14 @@
       margin-left: 20px;
   }
   .toolbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 60px;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 60px;
+    grid-template-columns: 80px calc(100% - 160px) 80px;
     background-color: black;
   }
   .buscador_responsive{
@@ -21,19 +22,93 @@
       display: inline-flex;
       margin: 0 auto;
       width:48%;
+      grid-row: 1;
+      grid-column: 2;
+      justify-content: center;
+      margin-top: 0.5%;
     }
   .buscador input{
       height: 30px;
       margin-top: 9px;
       border-radius: 9px;
       width: 300px;
-      opacity: 0.5;
+      background-color: lightgray;
   }
-  .buscador i{
+  .buscador img{
       margin: 8px;
       color: white;
       font-size: 30px;
   }
+  .dropdown-item img, .dropdown-item p{
+    display: block;
+    margin: 5px;
+  }
+.item_5 p, .item_5 img, .item_4 p, .item_4 img, .item_3 img, .item_3_text, .item_2 img, .item_2_text, .item_1 img, .item_1_text{
+    display: inline-block;
+}
+  .item_1 img, .item_2 img, .item_3 img{
+      margin-right: 15px;
+      margin-top: -25px;
+  }
+.user h2{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.user p{
+    color: white;
+    font-size: 16px;
+}
+.user{
+    grid-row: 1;
+    grid-column: 3;
+    justify-self: self-end; 
+    display: inline-flex;
+    margin-top: 8%;
+}
+.dropdown-menu{
+    background-color: black;
+}
+.dropdown-menu span, .dropdown-menu h6{
+    color: #119DA4;
+}
+.dropdown-menu ul{
+    list-style: circle;
+    color: #119DA4;
+}
+.dropdown-menu a{
+    color: white;
+}
+.dropdown-item{
+    pointer-events: none;
+}
+.dropdown-header{
+    font-size: 20px;
+    text-align: center;
+}
+.divider_0, .divider_1, .divider_2{
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    line-height: 30px;
+}
+.dropdown-menu-right{
+    position: absolute;
+will-change: transform !important;
+top: 0px !important;
+left: 0px !important;
+transform: translate3d(-400px, 38px, 0px) !important;
+}
+.buscador .opcion_1 .dropdown-menu{
+    position: absolute;
+    will-change: transform;
+    top: 0px;
+    left: 0px;
+    transform: translate3d(0px, 39px, 0px);
+    width: 100% !important;
+}
   .side-panel{
     width: 250px;
     position: fixed;
@@ -43,26 +118,26 @@
     height: 100%;
   }
   .side-panel h4{
-      font-size: 25px;
+      font-size: 24px;
       margin-top: 25px;
   }
   .side-panel_contacto{
-      margin-top: 313px;
+      margin-top: 130px;
       text-align: center;
       align-items: center;
   }
   .side-panel_contacto a{
       color: white;
       text-decoration: none;
-      font-size: 15px;
+      font-size: 16px;
       padding-right: 30px;
       padding-left: 20px;
       
   }
-  .side-panel_contacto i{
+  .side-panel_contacto img{
     color: white;
     font-size: 20px;
-    margin-left: 42px;
+    margin-left: 38px;
     margin-right: 38px;
 }
 .side-panel_img{
@@ -70,9 +145,9 @@
     font-size: 40px;
     text-align: center;
 }
-.side-panel_img i{
-    margin: 25px;
-    margin-top: 28px;
+.side-panel_img img{
+    margin:10px;
+    margin-top: 15px;
 }
   .side-panel_informacion{
       color: white;
@@ -92,15 +167,10 @@
   .side-panel_informacion a{
       color: white;
       text-decoration: none;
-      font-size: 19px;
+      font-size: 18px;
       font-style: oblique;
+      text-align: left;
   }
-    .user i{
-        color: white;
-        font-size: 30px;
-        padding: 15px;
-        
-    }
     .user_notificaciones{
         border-radius: 100%;
         width: 25px;
@@ -108,7 +178,6 @@
         background-color: red;
         border: 2px solid red;
         position: fixed;
-        margin-top: -55px;
     }
   @media screen and (max-width: 767px) {
       .toolbar{

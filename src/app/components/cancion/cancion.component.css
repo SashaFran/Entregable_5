@@ -1,0 +1,208 @@
+.principal_responsive{
+    visibility: hidden;
+    display: none;
+}
+.principal{
+    display: grid;
+    /* grid-template-columns: 850px 150px 100px; */
+    grid-template-columns: calc(100% - 250px) 150px 100px;
+    grid-template-rows: 80px 200px auto 820px; 
+    gap: 15px 10px;
+    margin-top: 80px;
+    margin-left: calc(250px + 2%);
+    margin-right: 2%;
+}
+.links{
+    grid-column: 1;
+    grid-row: 1;
+    /* margin-left: 5%; */
+}
+.links, .links p, .links img{
+    display: inline-block;
+}
+.links img{
+    margin-right: 5px;
+}
+.compartir{
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    margin-right: 20%;
+}
+.botones_cancion{
+    grid-row: 2;
+    grid-column: 2;
+    align-self: center;
+}
+.principal .div_central{
+    grid-column: 1;
+    /* margin-left: 5%; */
+}
+.principal .div_central #img_central, .principal .div_central h1{
+    display: inline-block;
+    margin: 1px;
+    margin-bottom: 0;
+}
+.principal .div_central h1{
+    font-size: 68px;
+    vertical-align: middle;
+}   
+.div_central{
+display: table;
+}
+.prinicipal .informacion_cancion span, .prinicipal .informacion_cancion img{
+    display: inline-block;
+    margin: 2px;
+
+}
+.botones_cancion img{
+    height: 100px; 
+    fill: #119DA4;
+}
+.informacion_cancion p{
+    display: inline-block;
+    margin-bottom: 0;
+    margin: 2px;
+    
+}
+.informacion_cancion{
+    margin-left: 205px;
+    margin-top: -25px;
+    opacity: 0.7;
+    font-size: 18px;
+}
+.informacion_cancion img{
+    margin-top: -3px;
+    margin-left: 2px;
+    margin-right: 3px;
+}
+.principal .caja_informacion{
+    grid-column: 1/4;
+    grid-row: 3;
+    background-color: #13505B;
+    border-radius: 12px;
+    /* margin-left: 4%; */
+    margin-right: 2%;
+    height: 100px;
+    
+}
+.caja_informacion p{
+    color: white;
+    font-size: 18px;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+}
+.caja_informacion .clasificacion p, .caja_informacion .clasificacion img{
+    display: inline;
+}
+.clasificacion{
+    text-align: center;
+    margin-top: 30px;
+}
+.comentarios{
+    grid-row: 4;
+    grid-column: 1/4;
+    height: 40px;
+    display: inline-grid;
+    grid-template-columns: 350px auto 250px;
+    grid-template-rows: 40px 150px 300px auto; 
+    gap: 15px 10px;
+}
+#p_comentarios{
+    background-color: #ACACAC;
+}
+.comentarios p{
+    font-size: 24px;
+    color: black;
+    justify-self: center;
+    margin-bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+.caja_comentarios{
+    height: 150px;
+    grid-row: 2;
+    grid-column: 1/3;
+    margin-right: 80px;
+    background-color: #ACACAC;
+}
+.comentarios button{
+    grid-row: 2;
+    grid-column: 3;
+    height: 58px;
+    width: 222px;
+    align-self: center;
+    background-color: #119DA4;
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    border-radius: 25px;
+    
+    /* margin-left: 90px; */
+}
+#p_comentarios{
+    color: white;
+}
+.cantidad_comentarios{
+    grid-row: 3;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 100px 815px 100px;
+    grid-template-rows: auto auto auto;
+    grid-gap: 15px 10px;
+    margin-top: 150px;
+}
+.user_1, .user_2{
+    height: 80px;
+    width: 80px;
+    background-color: #ACACAC;
+    border-radius: 50%;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+}
+.user_3{
+    height: 80px;
+    width: 80px;
+    background-color: #119DA4;
+    border-radius: 50%;
+    grid-column: 3;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+}
+.comentario_1, .comentario_3, .comentario_2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.corazones{
+    align-self: center;
+    justify-self: center;
+}
+.comentario_1, .comentario_2{
+    width: 100%;
+    background-color: #ACACAC;
+    border-radius: 45px;
+    height: 100%;
+    grid-column: 2/4;
+    color: white;
+}
+.comentario_1 p, .comentario_3 p{
+    color: white;
+    justify-self: center;
+    align-self: center;
+}
+.comentario_3{
+    width: 100%;
+    background-color: #119DA4;
+    border-radius: 45px;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 3;
+}
+.user_1 img, .user_2 img, .user_3 img{
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}

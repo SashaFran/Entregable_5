@@ -49,6 +49,7 @@
     display: grid;
     color: #0C7489;
     grid-template-columns: 50px 200px 50px 40px;
+    justify-self: center;
 }
 .header_canciones h2, .header_canciones i{
     font-size: 40px;
@@ -81,9 +82,6 @@
     grid-template-rows: 45px;
     color: black;
 }
-.renglon_1:hover, .renglon_2:hover, .renglon_3:hover, .renglon_4:hover, .renglon_5:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
 .renglon_1 img, .renglon_2 img, .renglon_3 img, .renglon_4 img, .renglon_5 img{
     justify-self: center;
     align-self: center;
@@ -102,4 +100,53 @@
     margin:  10px;
     margin-top: 20px;
     border: none !important;
+}
+.btn_play:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn_play{
+        animation: moveInBottom 2s ease-out;
+    animation-fill-mode: backwards;
+    border-radius: 50%;
+}
+.btn_play:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+.btn_play::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+.btn_play:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.btn__play:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
 }

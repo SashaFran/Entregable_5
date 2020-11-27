@@ -5,10 +5,45 @@
     <i class="fa fa-search" aria-hidden="true"></i>
 </div>
 <div class="buscador">
-    <i class="fa fa-search" aria-hidden="true"></i>
-    <input type="text">
-    
-</div>
+    <img src="../assets/img/svg-images/buscar.svg" alt="Buscador" style="height: 30px;">
+    <div class="dropdown opcion_1">
+    <input type="text" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <div class="dropdown-menu">
+        <h6 class="dropdown-header">Tus últimas busquedas:</h6>
+        <a class="dropdown-item" href="#">Tini Stoessel</a>
+        <a class="dropdown-item" href="#">Correr</a>
+        <div class="dropdown-divider"></div>
+        <h6 class="dropdown-header">Lo más buscado:</h6>
+        <a class="dropdown-item" href="#">Linkin Park</a>
+        <a class="dropdown-item" href="#">Twenty One Pilots</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <img src="../assets/img/svg-images/filtro.svg" alt="Filtro busqueda" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="height: 30px;">
+      <div class="dropdown-menu filtro dropdown-menu-right">
+        <div class="divider_0">
+        <h6 class="dropdown-header">Ordenar por:</h6>
+        <ul>
+        <li><a class="dropdown-item" href="#">Más Reciente</a></li>
+        <li><a class="dropdown-item" href="#">Más Escuchado</a></li>
+        <li><a class="dropdown-item" href="#">Mejor Valorado</a></li>
+        </ul>
+        </div><div class="divider_1">
+        <h6 class="dropdown-header">Fecha estreno:</h6>
+        <ul>
+        <li><a class="dropdown-item" href="#">Última semana</a></li>
+        <li><a class="dropdown-item" href="#">Último mes</a></li>
+        </ul>
+        </div><div class="divider_2">
+        <h6 class="dropdown-header">Duración:</h6>
+        <ul>
+        <li><a class="dropdown-item" href="#">+3</a></li>
+        <li><a class="dropdown-item" href="#">-3</a></li>
+        </ul>
+    </div></div> 
+    </div>
+    </div>
+
 <div class="user">
     
 
@@ -67,15 +102,15 @@
 <div class="side-panel">
     <h2>SpoilerFive</h2>
     <div class="side-panel_informacion">
-        <h4><i class="fa fa-music" aria-hidden="true"></i>Mis Playlist</h4>
+        <h4><i class="fa fa-music" aria-hidden="true"><a routerLink="/misPlaylist">Mis Playlist</a></i></h4>
         <h4><i class="fa fa-star" aria-hidden="true"></i>Favoritos</h4>
         <div class="spacer"></div>
         <h4><i class="fa fa-play" aria-hidden="true"></i>Reproduciendo</h4>
         <ul>
-            <li><a href="">Ver canción/Podcast</a></li>
-            <li><a href="">Ver Artista/Autor</a></li>
-            <li><a href="">Agregar a PlayList</a></li>
-            <li><a href="">Agregar a Favoritos</a></li>
+            <li><a id="side_panel_a" routerLink="/cancion">Ver canción/Podcast</a></li>
+            <li><a id="side_panel_a" href="">Ver Artista/Autor</a></li>
+            <li><a id="side_panel_a" href="">Agregar a PlayList</a></li>
+            <li><a id="side_panel_a" href="">Agregar a Favoritos</a></li>
         </ul>        
     </div>
     <div class="side-panel_contacto">

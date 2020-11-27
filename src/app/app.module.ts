@@ -27,8 +27,11 @@ import { NotificacionesComponent } from './components/interactivos/notificacione
 import { MisPlaylistComponent } from './components/mis-playlist/mis-playlist.component';
 import { NoLogginEnglobadoComponent } from './components/noLoggin/no-loggin-englobado/no-loggin-englobado.component';
 import { LoggeadoEnglobadoComponent } from './components/loggeado/loggeado-englobado/loggeado-englobado.component';
-
-
+import { PlanesComponent } from './planes/planes.component';
+import { PlanesCardComponent } from './planes-card/planes-card.component';
+import { InicioMobileComponent } from './inicio-mobile/inicio-mobile.component';
+import { RegistroComponent } from './registro/registro.component';
+import { SesionComponent } from './sesion/sesion.component';
 
 
 @NgModule({
@@ -50,6 +53,12 @@ import { LoggeadoEnglobadoComponent } from './components/loggeado/loggeado-englo
     MisPlaylistComponent,
     LoggeadoEnglobadoComponent,
     NoLogginEnglobadoComponent,
+    PlanesComponent,
+    PlanesCardComponent,
+    InicioMobileComponent,
+    RegistroComponent,
+    SesionComponent,
+
   ],
   imports: [
     BrowserModule,

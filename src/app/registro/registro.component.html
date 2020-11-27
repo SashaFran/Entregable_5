@@ -11,7 +11,14 @@
     
     <div class="info">
         <h1>Spoiler Five Inc.</h1>
-        <p>Spoiler Five es una aplicación, diseñada para brindarte la comodidad de escuchar tu música y podCast en el lugar, cuando y bajo el plan que desees. Estamos para vos en donde nos necesites soportamos multiples dispositivos, en multiples plataformas. Buscanos!</p>
+        <form action="/home-log" method="post">
+            <input type="text" name="nombre" id="nombre" placeholder="nombre" required>
+            <input type="email" name="Email" id="email" placeholder="Email" required>
+            <input type="password" name="pass" id="pass" placeholder="Contraseña" required>
+            <input type="password2" name="pass2" id="pass2" placeholder="Confirmar Contraseña" required>
+            <input   type="submit" class="boton backverde" id="submit" value="Registrarse">
+        </form>
+        
     </div>
     <div class="imagen_2">
         <img src="../../assets/img/svg-images/chica-escuchando.png" class="chica1">

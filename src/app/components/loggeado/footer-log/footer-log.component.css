@@ -65,6 +65,9 @@
     margin-left: 270px;
     margin-top: -70px;
 }
+.footer_clasificacion i{
+    cursor: pointer;
+}
 .footer .footer_desktop .footer_cancion{
     color: white;
     position: relative;

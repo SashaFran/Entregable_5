@@ -6,10 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer-log.component.css']
 })
 export class FooterLogComponent{
+  fullHearts: string[];
+  numbers: number[] = [1,2,3,4,5];
+  noVoted: boolean = true;
 
   constructor() { 
-    console.log("Footer loggeado funciona");
   }
 
-
+  vote( number ){
+    this.fullHearts = ["fa fa-heart-o","fa fa-heart-o","fa fa-heart-o","fa fa-heart-o","fa fa-heart-o"];
+    for ( var i = 0; i<number; i++) {
+      this.fullHearts[i] = "fa fa-heart";
+    }
+    this.noVoted = false;
+  }
 }

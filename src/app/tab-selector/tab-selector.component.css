@@ -39,10 +39,8 @@
   height: auto;
 }
 .mat-tab-group{
-width: calc(100% - 250px);
+width: 100%;
 padding:20px;
-margin-left: 250px;
-margin-top: 60px;
 padding-bottom: 150px;
 }
 .list{

@@ -212,6 +212,16 @@ transform: translate3d(-400px, 38px, 0px) !important;
     .logo-mobile{
         display: none;
     }
+    #radio_button{
+        list-style: none;
+    }
+    #radio_button ul, #radio_button li{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100px;
+    }
   @media screen and (max-width: 767px) {
       .toolbar{
           position: fixed;

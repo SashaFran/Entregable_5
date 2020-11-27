@@ -9,7 +9,7 @@ import { SongInfo } from 'src/app/song-info';
 export class CardWithLabelComponent implements OnInit {
   @Input() item:SongInfo;
   constructor() { 
-   /*  this.imagesrc="../../assets/img/image.png";
+   /*  this.imagesrc="./assets/img/image.png";
     this.titlesong="titulo cancion"; */
   }
 

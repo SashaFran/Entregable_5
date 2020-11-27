@@ -16,6 +16,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule,routingComponents } from './app-routing.module';
 import { PlanesComponent } from './planes/planes.component';
 import { PlanesCardComponent } from './planes-card/planes-card.component';
+import { InicioMobileComponent } from './inicio-mobile/inicio-mobile.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { PlanesCardComponent } from './planes-card/planes-card.component';
     FooterComponent,
     PlanesComponent,
     PlanesCardComponent,
+    InicioMobileComponent,
 
   ],
   imports: [

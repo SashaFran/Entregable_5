@@ -1,10 +1,11 @@
 .principal_mp{
+    width: calc(100% - 250px);
+    margin: auto;
     grid-template-columns: 50px 600px 400px 50px;
     grid-template-rows: 80px 80px auto;
     grid-gap: 15px 5px;
     display: grid;
     justify-content: end;
-    background-color: #D7D9CE
 }
 .titulo_principal{
     grid-column: 2;
@@ -22,9 +23,10 @@
     grid-column: 2;
     grid-row: 3;
     display: grid;
-    grid-template-columns: repeat(3, 190px);
+    grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
     justify-self: start;
+    padding-bottom: 150px;
 }
 .album p{
     margin-left: 20%;
@@ -55,11 +57,7 @@
 .header_canciones i{
     font-weight: lighter;
 }
-.canciones img{
-    grid-column: 4;
-    justify-self: center;
-    align-self: center;
-}
+
 #numeral{
     grid-column: 1;
     justify-self: auto;
@@ -90,6 +88,10 @@
     fill: #0C7489;
     height: 33px;
 }
-.albumes img{
-    height: 150px;
+
+.card{
+    
+    margin:  10px;
+    margin-top: 20px;
+    border: none !important;
 }

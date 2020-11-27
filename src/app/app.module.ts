@@ -14,6 +14,8 @@ import { FooterLogComponent } from './components/loggeado/footer-log/footer-log.
 import { FooterComponent } from './components/noLoggin/footer/footer.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule,routingComponents } from './app-routing.module';
+import { PlanesComponent } from './planes/planes.component';
+import { PlanesCardComponent } from './planes-card/planes-card.component';
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { AppRoutingModule,routingComponents } from './app-routing.module';
     FooterLogComponent,
     NavBarComponent,
     FooterComponent,
+    PlanesComponent,
+    PlanesCardComponent,
 
   ],
   imports: [

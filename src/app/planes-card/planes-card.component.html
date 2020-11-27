@@ -1,13 +1,35 @@
 <div class="container">
+    <div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <p class="titulo_plan">Plan {{item.name}}</p>
+            <img class="img-info"src="./assets/img/svg-images/info.svg" />
+            
+        </div>
+        <div class="flip-card-back">
+            <p class="titulo_plan">Plan {{item.name}}</p>
+            <ul>
+                <li>{{item.description}}</li>
+                <li>Pasate a premium para beneficios exclusivos.</li>
+            </ul>
+        <input type="button" class="boton backverde" value="{{item.price}}">
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<!-- <div class="container">
     <p class="titulo_plan">Plan {{item.name}}</p>
     <ul>
-        <!-- <li *ngFor="let descr of {{item.description}} ">{{descr}}</li> -->
+         <li *ngFor="let descr of {{item.description}} ">{{descr}}</li> 
         <li>{{item.description}}</li>
         <li>Pasate a premium para beneficios exclusivos.</li>
     </ul>
     <input type="button" class="boton backverde" value="{{item.price}}">
 </div>
-    
+     -->
 
     
 

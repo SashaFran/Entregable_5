@@ -5,13 +5,18 @@
             <span id="album"> Yamana </span>
         </div>
 
-            <div class="footer_clasificacion">
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-            </div>  
+        <div class="footer_clasificacion">
+            <ng-container *ngIf="noVoted;else votedHearts">
+                <ng-container *ngFor="let number of numbers">
+                    <i class="fa fa-heart-o" (click)="vote(number)" aria-hidden="true"></i>
+                </ng-container>
+            </ng-container>
+            <ng-template #votedHearts>
+                <ng-container  *ngFor="let fullHeart of fullHearts;let i= index">
+                    <i class="{{fullHeart}}" (click)="vote(i+1)" aria-hidden="true"></i>
+                </ng-container>
+            </ng-template>
+        </div>
             <div class="footer_reproductor">
                 <div class="video_player">
 

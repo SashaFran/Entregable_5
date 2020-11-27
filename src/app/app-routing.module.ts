@@ -4,7 +4,6 @@ import{LoggeadoEnglobadoComponent} from './components/loggeado/loggeado-englobad
 import{NoLogginEnglobadoComponent} from './components/noLoggin/no-loggin-englobado/no-loggin-englobado.component';
 /** patata */
 import { TabSelectorComponent } from './tab-selector/tab-selector.component';
-import { CardWithLabelComponent } from './card-with-label/card-with-label.component';
 
 /** Dai(?*/ 
 import { CancionComponent } from './components/cancion/cancion.component';
@@ -31,4 +30,4 @@ const routes: Routes=[
   exports:[RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents=[LoggeadoEnglobadoComponent,NoLogginEnglobadoComponent,CardWithLabelComponent,CancionComponent, MisPlaylistComponent];
+export const routingComponents=[LoggeadoEnglobadoComponent,NoLogginEnglobadoComponent,CancionComponent, MisPlaylistComponent];

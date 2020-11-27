@@ -1,7 +1,33 @@
-.central{
-height: 550px;
-position: relative;
-margin: 0 auto;
-width: 100%;
 
+
+.centro{
+    margin-left: 250px;
+    width: calc ( 100% - 250px );
+    z-index: 0;
+}
+
+
+.absolute{
+    position: absolute;
+    z-index: 10;
+}
+@media (max-width: 640px) {
+    .centro{
+        margin: 0;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .margin-top{
+        margin-top: 120px;
+    }
+    .relative{
+        position: relative;
+        margin-top: 60px;
+        height: 40px;
+        padding:5px;
+    }
+    .nav-abs{
+        position: absolute;
+        z-index: 10;
+    }
 }

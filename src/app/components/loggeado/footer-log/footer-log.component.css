@@ -70,7 +70,11 @@
     grid-column: 2;
     grid-row: 1;
 }
-.footer_cancion{
+/* .footer_cancion{ */
+.footer_clasificacion i{
+    cursor: pointer;
+}
+.footer .footer_desktop .footer_cancion{
     color: white;
     grid-column: 2;
     grid-row: 1;

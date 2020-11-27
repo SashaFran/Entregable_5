@@ -1,20 +1,3 @@
-
-
-@media (max-width: 480px) {
-    .card-song{
-        width: 150px;
-        height: 180px;
-    }
-    .card-song img {
-        width: 150px;
-        height: 150px;
-        border-radius: 10px;
-    }
-    .card-song a{
-        font-size: 19px;
-        line-height: 22px;
-    }
-}
 .card-song{
     width: 186px;
     height: 215px;
@@ -34,8 +17,24 @@
 .mat-card-actions{
     margin: 10px;
     padding: 0;
+
+    font-weight: bold;
+    font-size: 20px;
+  
     overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
 }
+
+.mat-card-actions > span
+{
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+}
+
 
 .card-song a{
     font-style: normal;
@@ -45,7 +44,7 @@
 }
 .card-song a:hover{
     text-decoration: none;
-
+    color: #0C7489;
 }
   
 .flex-column {
@@ -79,8 +78,38 @@
 
 .itemsContainer .image a img{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 100%;
+    height: 100%;
     border-radius: 13px;
 }
 .mat-card:not() {
     box-shadow:none !important;
 }
+.playButton{
+    fill:#119DA4;
+}
+
+@media (max-width: 640px) {
+    .card-song{
+        width: 150px;
+        height: 180px;
+    }
+    .card-song img {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    .card-song a{
+        font-size: 19px;
+        line-height: 22px;
+    }
+    
+    .play{
+        width:80px;
+        top:22%; 
+    }
+    .play img{
+        width: 100%;
+        height: 100%;
+    }
+} 

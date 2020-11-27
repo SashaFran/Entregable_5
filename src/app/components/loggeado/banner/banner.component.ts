@@ -10,8 +10,6 @@ export class BannerComponent implements OnInit {
 
   isShow: boolean;
   constructor( private router: Router) {
- 
-    
     // this.isShow = this.router.url != '/misPlaylist';
     // this.isShow = this.router.url != '/cancion';
     if (router.url === '/home-log') {

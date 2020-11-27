@@ -4,6 +4,9 @@
             <p id="cancion"> Mi vida ven a bailar</p>
             <span id="album"> Yamana </span>
         </div>
+        <div class="cancion_resp">
+            <p> Mi vida ven a bailar - Yámana</p>
+        </div>
 
         <div class="footer_clasificacion">
             <ng-container *ngIf="noVoted;else votedHearts">
@@ -17,6 +20,26 @@
                 </ng-container>
             </ng-template>
         </div>
+        <div class="corazones_resp">
+            <div class="dropdown">
+                <i aria-hidden="true" class="fa fa-heart-o dropdown-toggle" aria-expanded="false" type="button" data-toggle="dropdown"                      aria-haspopup="true" aria-expanded="false"></i>
+                <div class="dropdown-menu">
+                    <div class="footer_clasificacion">
+                        <ng-container *ngIf="noVoted;else votedHearts">
+                            <ng-container *ngFor="let number of numbers">
+                                <i class="fa fa-heart-o" (click)="vote(number)" aria-hidden="true"></i>
+                            </ng-container>
+                        </ng-container>
+                        <ng-template #votedHearts>
+                            <ng-container  *ngFor="let fullHeart of fullHearts;let i= index">
+                                <i class="{{fullHeart}}" (click)="vote(i+1)" aria-hidden="true"></i>
+                            </ng-container>
+                        </ng-template>
+                    </div>
+                </div>
+            </div>
+        </div>
+
             <div class="footer_reproductor">
                 <div class="video_player">
 
@@ -27,7 +50,18 @@
                     <img src="../assets/img/svg-images/siguiente.svg" alt="Siguiente cancion">
                     <img src="../assets/img/svg-images/random.svg" alt="Random">
                     </div>
+                </div>
                     
+            </div>
+                    <div class="video_player-icon">
+                    <img id="btn_anterior" src="../assets/img/svg-images/anterior.svg" alt="Cancion anterior" style="height: 52px;">
+                    <img id="btn_play" src="../assets/img/svg-images/play.svg" alt="" style="height: 70px;">
+                    <img id="btn_siguiente" src="../assets/img/svg-images/siguiente.svg" alt="Siguiente cancion" style="height: 52px;">
+                    
+                    </div>
+                    <div class="video_player-random">
+<img id="btn_random" src="../assets/img/svg-images/random.svg" alt="Random" style="height: 28px;">
+                    </div>
                     <div class="video_player-barra">
                         <p class="comienzo"> 01:50</p>
                             <div class="barra">
@@ -35,52 +69,25 @@
                             </div>
                             <p class="fin"> 03:00 </p>
                         </div>
-                </div>
-            </div>
-             <div class="volumen">
-                 <img src="../assets/img/svg-images/vol-silencio.svg" alt="volumen">
-                <div class="barra_volume">
-                    <div class="circle_volume"></div>
-                </div>
-            </div> -
-    </div>
-         <div class="footer_responsive">
-
-             <div class="clasificacion_resp">
-                <i class="fa fa-heart-o resp-fa-heart-o" aria-hidden="true"></i>
-                <div class="desplegable_res">
-                    <div class="corazones_resp">
-                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                    </div>
-                </div>
-             </div>
-             <div class="menu_hambur_resp">
-                 <img src="../assets/img/svg-images/menu.svg" alt="hamburguesa">
-             </div> 
-                    <div class="video_player-icon">
-                        <i class="fa fa-step-backward" aria-hidden="true"></i>
-                        <i class="fa fa-play-circle" aria-hidden="true"></i> 
-                        <i class="fa fa-step-forward" aria-hidden="true"></i>
-                    </div>
-                    <div class="cancion_resp">
-                        <p id="cancion"> Mi vida ven a bailar</p>
-                        <p id="responsive_cancion"> - </p>
-                        <span id="album"> Yamana </span>
-                     </div>
-                    <div class="reproductor_resp_barra">
-                        <p class="comienzo_resp"> 01:50</p>
-                            <div class="barra_resp">
-                                <div class="circle_respo"></div>
+                            <div class="volumen">
+                                <img src="../assets/img/svg-images/vol-silencio.svg" alt="volumen">
+                                <div class="barra_volume">
+                                    <div class="circle_volume"></div>
+                                </div>
+                            </div> 
+                            <div class="hamburguesa">
+                                <img src="../assets/img/svg-images/menu.svg" type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false" alt="menu" style="height: 45px;">
+                                <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Ver Datos Cancion</a>
+                                        <a class="dropdown-item" href="#">Ver PodCast</a>
+                                        <a class="dropdown-item" href="#">Ver PlayList</a>
+                                        <a class="dropdown-item" href="#">Ver Artista</a>
+                                        <a class="dropdown-item" href="#">Agregar a PlayList</a>
+                                        <a class="dropdown-item" href="#">Agregar a Favoritos</a>
+                                </div>
                             </div>
-                            <p class="fin_resp"> 03:00 </p>
-                    </div>
+                </div>
 
-             <div class="volumen_resp">
-
-             </div>
-        </div>
-</div>
+    </div>
+   

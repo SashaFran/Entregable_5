@@ -11,7 +11,7 @@
     
     <div class="info">
         <h1>Spoiler Five Inc.</h1>
-        <form action="/home-log" method="post">
+        <form  name="form" (ngSubmit)="onSubmit()" #f="ngForm" novalidate>
             <input type="text" name="nombre" id="nombre" placeholder="nombre" required>
             <input type="email" name="Email" id="email" placeholder="Email" required>
             <input type="password" name="pass" id="pass" placeholder="Contraseña" required>

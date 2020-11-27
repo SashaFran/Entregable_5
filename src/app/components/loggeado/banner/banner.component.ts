@@ -12,16 +12,17 @@ export class BannerComponent implements OnInit {
   constructor( private router: Router) {
     // this.isShow = this.router.url != '/misPlaylist';
     // this.isShow = this.router.url != '/cancion';
-    if (router.url === '/home-log') {
-      this.isShow = true;
-    }  else {
-      this.isShow = false;
-    }
-    console.log(this.router.url);
-    console.log("Funciona el banner");
+
+    // console.log(this.router.url);
+    // console.log("Funciona el banner");
   }
 
   ngOnInit(): void {
+    if (this.router.url === '/home-log') {
+      this.isShow = true;
+    } else {
+      this.isShow = false;
+    }
   }
 
 }

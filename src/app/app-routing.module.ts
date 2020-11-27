@@ -5,7 +5,9 @@ import{NoLogginEnglobadoComponent} from './components/noLoggin/no-loggin-engloba
 
 const routes: Routes=[
   {path:'home-log',component:LoggeadoEnglobadoComponent},
-  {path:'home',component:NoLogginEnglobadoComponent}
+  {path:'home',component:NoLogginEnglobadoComponent},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  
 ];
 
 @NgModule({

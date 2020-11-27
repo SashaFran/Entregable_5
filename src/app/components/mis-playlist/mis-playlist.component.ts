@@ -11,7 +11,7 @@ export class MisPlaylistComponent implements OnInit {
   array:SongInfo[] =[
     new SongInfo('1','Ayer me llamo mi ex',"",'3:00',"artista","album","./assets/img/songs/ayer.png"),
     new SongInfo('2','Stay with me',"",'3:10',"artista","album","./assets/img/songs/bird.png"),
-    new SongInfo('3','BlurryFace',"",'3:00',"artista","album","../assets/img/songs/blurry.png"),
+    new SongInfo('3','BlurryFace',"",'3:00',"artista","album","./assets/img/songs/blurry.png"),
     new SongInfo('4','Colores',"",'3:10',"artista","album","./assets/img/songs/colores.png"),
     new SongInfo('5','CryBaby',"",'3:00',"artista","album","./assets/img/songs/cry.png"),
     new SongInfo('6','That Bitch!',"",'3:10',"artista","album","./assets/img/songs/thatbitch.png"),

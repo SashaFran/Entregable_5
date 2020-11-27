@@ -20,6 +20,7 @@ p{
     border-radius: 50px;
 }
 .premium{
+    color: #119da4;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
@@ -27,6 +28,7 @@ p{
     text-decoration: underline;
 }
 hr{
+    background-color: #119da4 ;
     width: 360px;
     margin-top: 60px;
 }

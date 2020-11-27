@@ -4,6 +4,7 @@ app-nav-bar{
 
 
 .infoSpoiler{
+    background-color: #119da4;
     width: 1920px;
     height: 400px;
     margin-top: 60px;
@@ -45,6 +46,7 @@ app-nav-bar{
 }
 @media screen and (max-width: 1400px){
     .infoSpoiler{
+        background-color: #119da4;
         width: 100%;
         height: 100%;
         margin-top: 60px;

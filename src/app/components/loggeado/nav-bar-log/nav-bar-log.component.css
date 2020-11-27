@@ -4,6 +4,12 @@
   .nav-bar_logo{
       margin-left: 20px;
   }
+  .logo{
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+  }
   .toolbar {
     position: fixed;
     top: 0;

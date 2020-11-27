@@ -43,6 +43,12 @@
     margin: 1px;
     margin-bottom: 0;
 }
+
+#img_central{
+    width: 200px;
+    border-radius: 13px;
+
+}
 .principal .div_central h1{
     font-size: 68px;
     vertical-align: middle;

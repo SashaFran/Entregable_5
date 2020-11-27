@@ -5,8 +5,8 @@
       margin-left: 20px;
   }
   .logo{
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     margin: 0 auto;
     display: block;
   }
@@ -193,10 +193,21 @@ transform: translate3d(-400px, 38px, 0px) !important;
         border: 2px solid red;
         position: fixed;
     }
+<<<<<<< HEAD
+<<<<<<< HEAD
+    .responsive_user{
+        visibility: hidden;
+        display: none;
+    }
+    .configuracion_user img{
+        height: 30px;
+    }
+    .configuracion_user p, .configuracion_user img{
+        display: inline-block;
+    }
     .logo-mobile{
         display: none;
     }
-    
   @media screen and (max-width: 767px) {
       .toolbar{
           position: fixed;
